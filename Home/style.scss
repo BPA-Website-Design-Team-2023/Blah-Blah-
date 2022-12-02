@@ -1,6 +1,7 @@
 body{
     background-color: black;
 }
+/* navbar*/
 .navbar {
     overflow: hidden;
     background-color: black;
@@ -70,3 +71,32 @@ body{
       display: block;
       text-align: left;
     }}
+    /*end of navbar*/
+    .button{
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+    .button1{
+      background-color: #646668;
+      text-decoration: none;
+      border-radius: 25px;
+      padding: 5px 10px;
+    }
+    .button2{
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      padding: 15px 25px;
+      border: 2px solid #8C52FF;
+    }
+    h1{
+      color: white;
+      font-family: 'League Spartan', sans-serif;
+    }
+    h2{
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+    }
