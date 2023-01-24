@@ -19,7 +19,7 @@ body {
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar a:hover {
@@ -43,7 +43,7 @@ body {
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .topnav .icon {
@@ -64,7 +64,6 @@ body {
     display: block;
   }
 }
-
 @media screen and (max-width: 800px) {
   .topnav.responsive {
     position: -webkit-sticky;
@@ -81,7 +80,6 @@ body {
     text-align: left;
   }
 }
-
 /*end of navbar*/
 .button {
   border: none;
@@ -112,12 +110,17 @@ body {
 
 h1 {
   color: white;
+<<<<<<< Updated upstream
   font-family: 'League Spartan', sans-serif;
   font-size: 48px;
+=======
+  font-family: "League Spartan", sans-serif;
+>>>>>>> Stashed changes
 }
 
 h2 {
   color: white;
+<<<<<<< Updated upstream
   font-family: 'Montserrat', sans-serif;
   font-size: 20.3px;
 }
@@ -135,3 +138,7 @@ h2 {
   position: relative;
 }
 /*# sourceMappingURL=style.css.map */
+=======
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=style.css.map */
+>>>>>>> Stashed changes
