@@ -1,23 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="style.css"> 
+
+    <!--FONT AWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+
+    <!--GOOGLE FONT-->
 </head>
+
+
 <body>
+  <div id="header-mobile">
     <div id="top">
-        <a href="/Home/index.html"><img src="/Home/images/favicon.png" alt="logo"></a>
-      <div class="topnav" id="myTopnav">
-        <a href="/Home/contactus.html">Contact Us</a>
-        <a href="/Home/financing.html">Financing</a>
-        <a href="/Home/tradeins.html">Sell/Trades</a>
-        <a href="/Home/inventory.html">Inventory</a>
-        <a href="/Home/index.html">Home</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="../Home/index.html"><img src="../Picture/logo.png" alt="logo"></a>
+        <i onclick="dropDown()" id="before" class="fas fa-bars"></i>
+        <i onclick="goUp()" id="after" class="fas fa-circle-notch"></i>
+
+    </div>
+
+    <div id="container">
+        <div id="bottom">
+            <a href="../Inventory/">Inventory</a>
+            <a href="../Sales/" >Sell/Trades</a>
+            <a href="../Financing/">Financing</a>
+            <a href="../Contact Us//index.html">Contact us</a>
         </div>
-      </div>
-        <br><br><br><br>
+    </div>
+  </div>
+
+  <div id="header-laptop">
+    <div id="top">
+        <a href="../Home/index.html"><img src="../picture/logo.png" alt="logo"></a>
+        <div id="nav">
+            <a href="../Inventory/">Inventory</a>
+            <a href="../Sales/" >Sell/Trades</a>
+            <a href="../Financing/">Financing</a>
+            <a href="../Contact Us//index.html">Contact us</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="main">
+
+    <div id="search">
+        <form id="search-bar" action="/action_page.php">
+          <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search Make, Model, or Keyword" name="search">
+          <button type="submit" id="go"><p>GO</p></button>
+        </form>
+
+        <ul id="filter">
+
+          <div id="list">
+            <p>Payment & Price</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div id="list">
+            <p>Make & Model</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div id="list">
+            <p>Body Type</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div id="list" class="first">
+            <p>Year & Mileage</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div id="list" class="second">
+            <p>Features</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div id="list" class="third">
+            <p>More Filters</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </ul>
+    </div>
+
+
+
+  </div>
+
 </body>
+
+<script src="../navbar.js"></script>
+<script type="module" src="../Home/script.js"></script>
 </html>

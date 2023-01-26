@@ -86,7 +86,6 @@ body {
   color: white;
   text-align: center;
 }
-
 .button a {
   text-decoration: none;
 }
@@ -110,18 +109,13 @@ body {
 
 h1 {
   color: white;
-<<<<<<< Updated upstream
-  font-family: 'League Spartan', sans-serif;
-  font-size: 48px;
-=======
   font-family: "League Spartan", sans-serif;
->>>>>>> Stashed changes
+  font-size: 48px;
 }
 
 h2 {
   color: white;
-<<<<<<< Updated upstream
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20.3px;
 }
 
@@ -136,9 +130,4 @@ h2 {
   height: 70px;
   margin-left: 5%;
   position: relative;
-}
-/*# sourceMappingURL=style.css.map */
-=======
-  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=style.css.map */
->>>>>>> Stashed changes

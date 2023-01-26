@@ -1,0 +1,213 @@
+@font-face {
+  font-family: Montserrate;
+  src: url(../Fonts-family/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: League Spartant;
+  src: url(../Fonts-family/League_Spartan/static/LeagueSpartan-Bold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  letter-spacing: 1px;
+  font-family: Montserrate;
+}
+
+body {
+  background-color: #000;
+  overflow-y: hidden;
+}
+
+p {
+  font-size: 0.8rem;
+  font-family: Montserrate;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-family: Montserrate;
+  font-size: 1.3rem;
+  color: white;
+}
+
+#header-mobile {
+  width: 100%;
+  position: fixed;
+  background-color: #000;
+  z-index: 5;
+}
+#header-mobile #top {
+  width: 100%;
+  height: 4rem;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#header-mobile #top #after {
+  display: none;
+}
+#header-mobile #top i {
+  position: absolute;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+#header-mobile #top i:hover {
+  cursor: pointer;
+}
+#header-mobile #top img {
+  height: 2.5rem;
+  padding-left: 2rem;
+}
+#header-mobile #container {
+  display: none;
+}
+#header-mobile #container #bottom {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+#header-mobile #container #bottom a {
+  text-decoration: none;
+  color: white;
+  padding: 0 0 2rem 0;
+}
+#header-mobile #container #bottom a:hover {
+  text-decoration: underline;
+}
+
+#header-laptop {
+  width: 100%;
+  position: fixed;
+  background-color: #000;
+  z-index: 5;
+  height: 6rem !important;
+  display: flex;
+  display: none;
+}
+#header-laptop #top {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#header-laptop img {
+  height: 4.5rem;
+  padding-left: 2rem;
+}
+#header-laptop #nav {
+  position: absolute;
+  right: 2rem;
+}
+#header-laptop #nav a {
+  text-decoration: none;
+  color: white;
+  padding-left: 1rem;
+}
+
+#search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  padding: 3rem 0rem;
+}
+#search #search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 80%;
+  background-color: white;
+  border-radius: 20px;
+}
+#search #search-bar #icon {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+#search #search-bar input {
+  height: 4rem;
+  width: 100%;
+  border-style: none;
+  padding-right: 1rem;
+}
+#search #search-bar input:focus {
+  outline: none;
+}
+#search #search-bar #go {
+  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
+  color: white;
+  border-style: none;
+  border-radius: 20px;
+  width: 4rem;
+  height: 3rem;
+}
+#search #search-bar #go:hover {
+  background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
+  cursor: pointer;
+}
+#search #filter {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+#search #filter #list {
+  color: white;
+}
+#search #filter .first, #search #filter .second, #search #filter .third {
+  display: none;
+}
+
+@media only screen and (min-width: 300px) {
+  p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+  h3 {
+    font-size: 2rem !important;
+  }
+  p {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    line-height: 1.7;
+  }
+}
+@media only screen and (min-width: 850px) {
+  h3 {
+    font-size: 2rem !important;
+  }
+  p {
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    line-height: 1.5;
+  }
+  #header-mobile #top {
+    height: 6rem;
+  }
+  #header-mobile #top img {
+    height: 4.5rem;
+  }
+  #header-mobile #top i {
+    font-size: 2.7rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  #header-mobile {
+    display: none;
+  }
+  #header-laptop {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
