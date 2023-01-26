@@ -20,7 +20,7 @@ body {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 13px;
   font-family: Montserrate;
   line-height: 1.5rem;
 }
@@ -121,14 +121,14 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0rem 1rem 0rem 1rem;
-  width: 80%;
+  width: 93%;
   background-color: white;
   border-radius: 20px;
 }
 #search #search-bar #icon {
   font-size: 1.5rem;
   padding-right: 1rem;
+  padding-left: 1rem;
 }
 #search #search-bar input {
   height: 4rem;
@@ -146,6 +146,7 @@ h3 {
   border-radius: 20px;
   width: 4rem;
   height: 3rem;
+  margin-right: 1rem;
 }
 #search #search-bar #go:hover {
   background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
@@ -154,18 +155,27 @@ h3 {
 #search #filter {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 93%;
+  justify-content: space-between;
+  background-color: aliceblue;
 }
 #search #filter #list {
+  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
   color: white;
+  display: flex;
+  height: 3rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
 }
-#search #filter .first, #search #filter .second, #search #filter .third {
-  display: none;
+#search #filter #list p {
+  padding-right: 3rem;
 }
 
 @media only screen and (min-width: 300px) {
   p {
-    font-size: 1rem;
+    font-size: 13px;
   }
   h1 {
     font-size: 3rem !important;
