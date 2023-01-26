@@ -176,6 +176,7 @@ h3{
         flex-direction: row;
         width: 93%;
         justify-content: space-between;
+        align-items: center;
         #list{
             background-image: $normal-background-color;
             color: $white;
@@ -185,8 +186,20 @@ h3{
             display: flex;
             align-items: center;
             padding: 0 1rem;
-            width: 40%;
+            width: 36%;
             justify-content: space-between;
+            i{
+                font-size:10px;
+            }
+        }
+        #menu{
+            background-image: $normal-background-color;
+            color:$white;
+            font-size: 1.5rem;
+            padding: .7rem;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
         }
     }
 
@@ -197,9 +210,6 @@ h3{
 
 
 @media only screen and (min-width: 300px){
-    p{
-        font-size: $normal-font ;
-    }
     h1{
         font-size: 3rem !important;
     }
@@ -208,18 +218,24 @@ h3{
 @media only screen and (min-width: 600px) {
     $h1: 3rem;
     $h3: 2rem;
-    $normal-font-word-spacing: 2px;
-    $normal-font-line-height:1.7;
-
     h1{
         font-size: $h1 !important;
     }
     h3{
         font-size: $h3 !important;
     }
-    p{
-        letter-spacing: $normal-font-word-spacing;
-        line-height: $normal-font-line-height;
+
+    body{
+        background-color: $purple;
+    }
+
+    #filter{
+        #list{
+            width: 25% !important;
+        }
+        .first{
+            display: block !important;
+        }
     }
 }
 
@@ -232,7 +248,6 @@ h3{
     }
 
     p{
-        word-spacing: $normal-font-word-spacing;
         line-height: $normal-font-line-height;
     }
 
