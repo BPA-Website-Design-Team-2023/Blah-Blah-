@@ -225,16 +225,13 @@ h3{
         font-size: $h3 !important;
     }
 
-    body{
-        background-color: $purple;
-    }
 
     #filter{
         #list{
             width: 25% !important;
         }
         .first{
-            display: block !important;
+            display: inline-flex !important;
         }
     }
 }
@@ -263,9 +260,19 @@ h3{
         }
         
     }
+
+    #filter{
+        #list{
+            width: 15% !important;
+        }
+        .second, .third{
+            display: inline-flex !important;
+        }
+    }
 }
 
-@media only screen and (min-width: 1100px){
+
+@media only screen and (min-width: 1000px){
     $h1: 4rem;
 
     #header-mobile{
@@ -273,6 +280,17 @@ h3{
     }
     #header-laptop{
         display: block;
+    }
+    #filter{
+        #list{
+            width: 12.5% !important;
+        }
+        .fourth{
+            display: inline-flex !important;
+        }
+        #menu{
+            display: none !important;
+        }
     }
 }
 

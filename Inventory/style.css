@@ -197,14 +197,11 @@ h3 {
   h3 {
     font-size: 2rem !important;
   }
-  body {
-    background-color: #731AC3;
-  }
   #filter #list {
     width: 25% !important;
   }
   #filter .first {
-    display: block !important;
+    display: inline-flex !important;
   }
 }
 @media only screen and (min-width: 850px) {
@@ -223,12 +220,27 @@ h3 {
   #header-mobile #top i {
     font-size: 2.7rem;
   }
+  #filter #list {
+    width: 15% !important;
+  }
+  #filter .second, #filter .third {
+    display: inline-flex !important;
+  }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1000px) {
   #header-mobile {
     display: none;
   }
   #header-laptop {
     display: block;
+  }
+  #filter #list {
+    width: 12.5% !important;
+  }
+  #filter .fourth {
+    display: inline-flex !important;
+  }
+  #filter #menu {
+    display: none !important;
   }
 }/*# sourceMappingURL=style.css.map */
