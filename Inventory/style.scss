@@ -171,11 +171,11 @@ h3{
     }
 
     #filter{
+        padding-top: 1rem;
         display: flex;
         flex-direction: row;
         width: 93%;
         justify-content: space-between;
-        background-color: aliceblue;
         #list{
             background-image: $normal-background-color;
             color: $white;
@@ -185,10 +185,8 @@ h3{
             display: flex;
             align-items: center;
             padding: 0 1rem;
-            p{
-                padding-right: 3rem;
-            }
-            //flex-grow: 1;
+            width: 40%;
+            justify-content: space-between;
         }
     }
 
@@ -210,7 +208,6 @@ h3{
 @media only screen and (min-width: 600px) {
     $h1: 3rem;
     $h3: 2rem;
-    $normal-font: 1.1rem;
     $normal-font-word-spacing: 2px;
     $normal-font-line-height:1.7;
 
@@ -221,7 +218,6 @@ h3{
         font-size: $h3 !important;
     }
     p{
-        font-size: $normal-font;
         letter-spacing: $normal-font-word-spacing;
         line-height: $normal-font-line-height;
     }
@@ -230,14 +226,12 @@ h3{
 @media only screen and (min-width: 850px) {
     $h1: 4rem;
     $h3: 2rem;
-    $normal-font: 1.2rem;
 
     h3{
         font-size: $h3 !important;
     }
 
     p{
-        font-size: $normal-font;
         word-spacing: $normal-font-word-spacing;
         line-height: $normal-font-line-height;
     }
