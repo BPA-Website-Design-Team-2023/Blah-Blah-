@@ -15,6 +15,26 @@ hr{
   border: none;
   opacity: 0.25;
 }
+.teamintro{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  p{
+    font-family: 'Montserrat', sans-serif;
+  }
+  #intro{
+    float: left;
+  }
+  #name{
+    color: $purple;
+  }
+}
+.teamintro > div{
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+}
 .footer{
   #socials{
     padding-top: 50px;
@@ -130,8 +150,8 @@ hr{
       font-family: 'Montserrat', sans-serif;
       font-size: 20.3px;
     }
-    /*main*/
-    #main{
+    /*header*/
+    #header{
       margin-left: 5%;
       margin-top: 250px;
       width: 15%;

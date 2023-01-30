@@ -13,6 +13,36 @@ hr {
   opacity: 0.25;
 }
 
+.teamintro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+.teamintro p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.teamintro #intro {
+  float: left;
+}
+
+.teamintro #name {
+  color: #731AC3;
+}
+
+.teamintro > div {
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+}
+
 .footer #socials {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -147,8 +177,8 @@ h2 {
   font-size: 20.3px;
 }
 
-/*main*/
-#main {
+/*header*/
+#header {
   margin-left: 5%;
   margin-top: 250px;
   width: 15%;
