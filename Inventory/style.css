@@ -95,6 +95,7 @@ hr {
 
 #header-mobile #top i:hover {
   cursor: pointer;
+  color: #D33BAC;
 }
 
 #header-mobile #top img {
@@ -125,7 +126,7 @@ hr {
 }
 
 #header-mobile #container #bottom a:hover {
-  text-decoration: underline;
+  color: #D33BAC;
 }
 
 #header-laptop {
@@ -168,6 +169,10 @@ hr {
   text-decoration: none;
   color: #ffff;
   padding-left: 1rem;
+}
+
+#header-laptop #nav a:hover {
+  color: #D33BAC;
 }
 
 #search {

@@ -94,6 +94,7 @@ hr{
         }
         i:hover{
             cursor: pointer;
+            color: $pink;
         }
         img{
             height: 2.5rem;
@@ -114,7 +115,7 @@ hr{
                 padding: 0 0 2rem 0;
             }
             a:hover{
-                text-decoration: underline;
+                color: $pink;
             }
         }
     }
@@ -143,6 +144,9 @@ hr{
             text-decoration: none;
             color: $white;
             padding-left: 1rem;
+        }
+        a:hover{
+            color: $pink;
         }
     }
     display: none;

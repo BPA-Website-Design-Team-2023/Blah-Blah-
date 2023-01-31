@@ -108,7 +108,7 @@ hr {
 }
 
 .topnav a:hover {
-  text-decoration: underline;
+  color: #731AC3;
   border-radius: 10px;
 }
 
@@ -164,6 +164,13 @@ hr {
   border-radius: 40px;
   padding: 15px 25px;
   border: 2px solid #8C52FF;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.button2:hover {
+  cursor: pointer;
+  background-color: #731AC3;
 }
 
 h1 {
