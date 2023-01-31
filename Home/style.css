@@ -29,8 +29,9 @@ hr {
   font-family: 'Montserrat', sans-serif;
 }
 
-.teamintro #intro {
+.teamintro .intro {
   float: left;
+  width: 300px;
 }
 
 .teamintro #name {

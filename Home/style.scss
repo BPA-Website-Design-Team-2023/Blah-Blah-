@@ -23,8 +23,9 @@ hr{
   p{
     font-family: 'Montserrat', sans-serif;
   }
-  #intro{
+  .intro{
     float: left;
+    width: 300px;
   }
   #name{
     color: $purple;
