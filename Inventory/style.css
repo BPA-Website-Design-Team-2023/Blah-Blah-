@@ -2,12 +2,10 @@
   font-family: Montserrate;
   src: url(../Fonts-family/Montserrat/static/Montserrat-Regular.ttf);
 }
-
 @font-face {
   font-family: League Spartant;
   src: url(../Fonts-family/League_Spartan/static/LeagueSpartan-Bold.ttf);
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -21,6 +19,11 @@ body {
   overflow-y: hidden;
 }
 
+h1 {
+  font-family: League Spartant;
+  font-size: 2rem;
+}
+
 p {
   font-size: 13px;
   font-family: Montserrate;
@@ -30,7 +33,7 @@ p {
 h3 {
   font-family: Montserrate;
   font-size: 1.3rem;
-  color: #ffff;
+  color: white;
 }
 
 hr {
@@ -45,14 +48,12 @@ hr {
   padding-bottom: 50px;
   padding-left: 10%;
   float: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 .footer p {
   font-size: 20px;
-  color: #ffff;
+  color: white;
 }
-
 .footer a {
   color: #848687;
   text-decoration: none;
@@ -65,66 +66,45 @@ hr {
   background-color: #000;
   z-index: 5;
 }
-
 #header-mobile #top {
   width: 100%;
   height: 4rem;
   background-color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 #header-mobile #top #after {
   display: none;
 }
-
 #header-mobile #top i {
   position: absolute;
   right: 2rem;
   font-size: 1.5rem;
-  color: #ffff;
+  color: white;
 }
-
 #header-mobile #top i:hover {
   cursor: pointer;
   color: #D33BAC;
 }
-
 #header-mobile #top img {
   height: 2.5rem;
   padding-left: 2rem;
 }
-
 #header-mobile #container {
   display: none;
 }
-
 #header-mobile #container #bottom {
   font-size: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 2rem;
 }
-
 #header-mobile #container #bottom a {
   text-decoration: none;
-  color: #ffff;
+  color: white;
   padding: 0 0 2rem 0;
 }
-
 #header-mobile #container #bottom a:hover {
   color: #D33BAC;
 }
@@ -135,170 +115,174 @@ hr {
   background-color: #000;
   z-index: 5;
   height: 6rem !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   display: none;
 }
-
 #header-laptop #top {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 #header-laptop img {
   height: 4.5rem;
   padding-left: 2rem;
 }
-
 #header-laptop #nav {
   position: absolute;
   right: 2rem;
 }
-
 #header-laptop #nav a {
   text-decoration: none;
-  color: #ffff;
+  color: white;
   padding-left: 1rem;
 }
-
 #header-laptop #nav a:hover {
   color: #D33BAC;
 }
 
+#contact {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  background-color: #000;
+}
+#contact iframe {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5;
+}
+#contact form {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  top: 0%;
+  padding-top: 1rem;
+  left: 50%;
+  transform: translate(-45%, 0%);
+}
+#contact form p {
+  padding-bottom: 3rem;
+  color: gray;
+}
+#contact form h1 {
+  color: white;
+}
+#contact form #input {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+#contact form #input input {
+  padding-top: 1rem;
+  background: none;
+  border-style: none;
+  border-bottom: 1px solid white;
+  padding-top: 3rem;
+  color: white;
+}
+#contact form #input input::-moz-placeholder {
+  color: white;
+}
+#contact form #input input:-ms-input-placeholder {
+  color: white;
+}
+#contact form #input input::placeholder {
+  color: white;
+}
+#contact form #input input:focus {
+  outline: none;
+}
+#contact form #send {
+  margin-top: 3rem;
+  position: absolute;
+  border: none;
+  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 10px;
+}
+#contact form #send i {
+  color: white;
+  font-size: 10px;
+}
+
 #search {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 4rem;
   padding: 3rem 0rem;
 }
-
 #search #search-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   width: 93%;
-  background-color: #ffff;
+  background-color: white;
   border-radius: 20px;
 }
-
 #search #search-bar #icon {
   font-size: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
-
 #search #search-bar input {
   height: 4rem;
   width: 100%;
   border-style: none;
   padding-right: 1rem;
 }
-
 #search #search-bar input:focus {
   outline: none;
 }
-
 #search #search-bar #go {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#D33BAC), to(#731AC3));
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  color: #ffff;
+  color: white;
   border-style: none;
   border-radius: 20px;
   width: 4rem;
   height: 3rem;
   margin-right: 1rem;
 }
-
 #search #search-bar #go:hover {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#731AC3), to(#D33BAC));
   background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
   cursor: pointer;
 }
-
 #search #filter {
   padding-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 93%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 #search #filter #list {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#D33BAC), to(#731AC3));
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  color: #ffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: white;
   display: flex;
   height: 3rem;
   border-radius: 25px;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 1rem;
   width: 36%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 #search #filter #list i {
   font-size: 10px;
 }
-
 #search #filter #menu {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#D33BAC), to(#731AC3));
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  color: #ffff;
+  color: white;
   font-size: 1.5rem;
-  padding: .7rem;
+  padding: 0.7rem;
   border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 300px) {
@@ -306,7 +290,6 @@ hr {
     font-size: 3rem !important;
   }
 }
-
 @media only screen and (min-width: 600px) {
   h1 {
     font-size: 3rem !important;
@@ -318,12 +301,9 @@ hr {
     width: 25% !important;
   }
   #filter .first {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
 }
-
 @media only screen and (min-width: 850px) {
   h3 {
     font-size: 2rem !important;
@@ -344,12 +324,9 @@ hr {
     width: 15% !important;
   }
   #filter .second, #filter .third {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   #header-mobile {
     display: none;
@@ -361,12 +338,9 @@ hr {
     width: 12.5% !important;
   }
   #filter .fourth {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
   #filter #menu {
     display: none !important;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
