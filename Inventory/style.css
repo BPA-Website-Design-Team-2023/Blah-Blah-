@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: League Spartant;
-  src: url(../Fonts-family/League_Spartan/static/LeagueSpartan-Bold.ttf);
+  src: url(../Fonts-family/League_Spartan/static/LeagueSpartan-SemiBold.ttf);
 }
 * {
   padding: 0;
@@ -31,9 +31,8 @@ p {
 }
 
 h3 {
-  font-family: Montserrate;
-  font-size: 1.3rem;
-  color: white;
+  font-family: League Spartant;
+  font-size: 1.2rem;
 }
 
 hr {
@@ -285,18 +284,61 @@ hr {
   justify-content: center;
 }
 
-@media only screen and (min-width: 300px) {
-  h1 {
-    font-size: 3rem !important;
-  }
+#inventory {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
+#inventory #box {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+#inventory #box img {
+  width: 100%;
+}
+#inventory #box h3 {
+  padding: 1rem 1rem 0 1rem;
+}
+#inventory #box p {
+  font-size: 12px;
+}
+#inventory #box #info {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+}
+#inventory #box #bottom {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 1rem 1rem 1rem;
+  justify-content: space-between;
+}
+#inventory #skip {
+  width: 100%;
+  padding: 3rem 0 5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#inventory #skip p {
+  color: white;
+}
+#inventory #skip #left, #inventory #skip #right {
+  display: flex;
+  justify-content: center;
+}
+#inventory #skip #left i, #inventory #skip #left button, #inventory #skip #right i, #inventory #skip #right button {
+  color: white;
+  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
+  border-style: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
 @media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 3rem !important;
-  }
-  h3 {
-    font-size: 2rem !important;
-  }
   #filter #list {
     width: 25% !important;
   }
@@ -305,12 +347,6 @@ hr {
   }
 }
 @media only screen and (min-width: 850px) {
-  h3 {
-    font-size: 2rem !important;
-  }
-  p {
-    line-height: 1.5;
-  }
   #header-mobile #top {
     height: 6rem;
   }
@@ -325,6 +361,64 @@ hr {
   }
   #filter .second, #filter .third {
     display: inline-flex !important;
+  }
+  #inventory {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between !important;
+  }
+  #inventory #box {
+    width: 49%;
+  }
+  #opacity {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    opacity: 0.5;
+    z-index: 8;
+  }
+  #contact {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+  }
+  #contact iframe {
+    pointer-events: visible;
+    opacity: 1;
+    height: 300px;
+  }
+  #contact form {
+    border-radius: 5px;
+    padding-left: 2rem;
+    width: 300px !important;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    left: 75%;
+  }
+  #contact form h1 {
+    display: none;
+  }
+  #contact form #input {
+    padding-top: 0 !important;
+  }
+  #contact form input {
+    color: #000 !important;
+    border-bottom: 1px solid #000 !important;
+  }
+  #contact form input::-moz-placeholder {
+    color: #000 !important;
+  }
+  #contact form input:-ms-input-placeholder {
+    color: #000 !important;
+  }
+  #contact form input::placeholder {
+    color: #000 !important;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -342,5 +436,8 @@ hr {
   }
   #filter #menu {
     display: none !important;
+  }
+  #inventory #box {
+    width: 32%;
   }
 }/*# sourceMappingURL=style.css.map */
