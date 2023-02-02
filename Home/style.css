@@ -3,7 +3,7 @@ body {
 }
 
 p {
-  color: #ffff;
+  color: white;
 }
 
 hr {
@@ -33,33 +33,24 @@ hr {
 .introhead {
   width: 50%;
 }
-
 .introhead h1 {
   font-size: 48px;
   color: #731AC3;
 }
 
 .teamintro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 90%;
 }
-
 .teamintro p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 .teamintro .intro {
   float: left;
   width: 300px;
 }
-
 .teamintro #name {
   color: #731AC3;
 }
@@ -75,13 +66,11 @@ hr {
   padding-bottom: 50px;
   padding-left: 10%;
   float: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 .footer p {
   font-size: 20px;
 }
-
 .footer a {
   color: #848687;
   text-decoration: none;
@@ -96,7 +85,6 @@ hr {
   width: 100%;
   top: 0;
 }
-
 .navbar a {
   float: right;
   font-size: 16px 16px;
@@ -104,9 +92,8 @@ hr {
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 .navbar a a:hover {
   text-decoration: underline;
 }
@@ -119,20 +106,17 @@ hr {
   width: 100%;
   top: 0;
 }
-
 .topnav a {
   font-size: 16px 16px;
   color: white;
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 .topnav .icon {
   display: none;
 }
-
 .topnav a:hover {
   color: #731AC3;
   border-radius: 10px;
@@ -146,7 +130,6 @@ hr {
     display: block;
   }
 }
-
 @media screen and (max-width: 800px) {
   .topnav.responsive {
     position: -webkit-sticky;
@@ -163,14 +146,12 @@ hr {
     text-align: left;
   }
 }
-
 /*end of navbar*/
 .button {
   border: none;
   color: white;
   text-align: center;
 }
-
 .button a {
   text-decoration: none;
 }
@@ -190,8 +171,7 @@ hr {
   border-radius: 40px;
   padding: 15px 25px;
   border: 2px solid #8C52FF;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .button2:hover {
@@ -201,13 +181,12 @@ hr {
 
 h1 {
   color: white;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-size: 48px;
 }
 
 h2 {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20.3px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
