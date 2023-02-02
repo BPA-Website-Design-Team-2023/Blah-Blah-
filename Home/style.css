@@ -13,6 +13,23 @@ hr {
   opacity: 0.25;
 }
 
+/*header*/
+#header {
+  margin-left: 5%;
+  margin-top: 250px;
+  width: 15%;
+}
+
+#top img {
+  height: 70px;
+  margin-left: 5%;
+  position: relative;
+}
+
+#car {
+  float: right;
+}
+
 .introhead {
   width: 50%;
 }
@@ -192,18 +209,5 @@ h2 {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 20.3px;
-}
-
-/*header*/
-#header {
-  margin-left: 5%;
-  margin-top: 250px;
-  width: 15%;
-}
-
-#top img {
-  height: 70px;
-  margin-left: 5%;
-  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
