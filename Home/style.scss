@@ -15,6 +15,13 @@ hr{
   border: none;
   opacity: 0.25;
 }
+.introhead{
+  width: 50%;
+  h1{
+    font-size: 48px;
+    color: $purple;
+  }
+}
 .teamintro{
   display: flex;
   flex-wrap: wrap;
