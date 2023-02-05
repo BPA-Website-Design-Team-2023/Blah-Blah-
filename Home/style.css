@@ -161,6 +161,7 @@ button:hover {
   overflow-y: hidden;
 }
 #first #car_animation {
+  margin-left: 2.5%;
   width: 100%;
   display: none;
 }
@@ -209,6 +210,9 @@ button:hover {
   right: 0;
   transform: translate(0, -50%);
   padding-right: 1rem;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
 }
 #second #right h1 {
   color: #D33BAC;
@@ -256,9 +260,11 @@ button:hover {
 #second #right #bottom {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 #second #right #quatity, #second #right #quickly {
   text-align: end;
+  width: 45%;
 }
 #second #right #quatity i, #second #right #quickly i {
   color: #731AC3;
@@ -270,6 +276,11 @@ button:hover {
   margin-top: 0.5rem;
 }
 
+@media only screen and (min-width: 600px) {
+  #second #right {
+    width: 25rem;
+  }
+}
 @media only screen and (min-width: 850px) {
   h1 {
     font-size: 3rem !important;
@@ -280,6 +291,9 @@ button:hover {
   #header-laptop {
     display: block;
   }
+  #first {
+    background-color: #525152;
+  }
   #first #top_car {
     display: none;
   }
@@ -289,6 +303,9 @@ button:hover {
   #first #intro {
     margin-left: 5%;
     width: 17rem;
+  }
+  #second #right {
+    margin-right: 5%;
   }
   #opacity {
     width: 100%;
