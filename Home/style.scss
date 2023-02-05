@@ -29,10 +29,6 @@ $normal-font-line-height:1.5;
     letter-spacing: 1px;
     font-family: Montserrate;
 }
-
-i{
-  color: $white;
-}
 body{
     background-color: $black;
     overflow-y: hidden;
@@ -47,11 +43,10 @@ p{
     color: $white;
     font-size: $normal-font;
     font-family: Montserrate;
-    line-height: 1.5rem;
 }
 h3{
     font-family: League Spartant;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 hr{
     height: 1.5px;
@@ -219,11 +214,71 @@ button:hover{
     transform: translate(0, -50%);
   }
   #right{
+    width: 70%;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
     padding-right: 1rem;
+    h1{
+      color: $pink;
+      text-align: end;
+    }
+    #search-bar{
+      overflow-y: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      background-color: $white;
+      border-radius: 20px;
+      margin: 1rem 0;
+      #icon{
+          font-size: 1.5rem;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          color: $black;
+      }
+      input{
+          height: 4rem;
+          width: 100%;
+          border-style: none;
+          padding-right: 1rem;
+      }
+      input:focus {
+          outline: none;
+      }
+      #go{
+          background-image: $normal-background-color;
+          color: $white;
+          border-style: none;
+          border-radius: 20px;
+          width: 4rem;
+          height: 3rem;
+          margin-right: 1rem;
+          overflow-y: hidden;
+      }
+      #go:hover{
+          background-image: $reverse-background-color;
+          cursor: pointer;
+      }
+    }
+    #bottom{
+      display: flex;
+      flex-direction: row;
+    }
+    #quatity, #quickly{
+      text-align: end;
+      i{
+        color: $purple;
+        font-size: 1.5rem;
+      }
+      h4{
+        font-family: League Spartant;
+        font-size: .8rem;
+        margin-top: .5rem;
+      }
+    }
   }
 
 }
