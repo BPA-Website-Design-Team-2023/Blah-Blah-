@@ -329,6 +329,30 @@ button:hover{
   }
 }
 
+#fourth{
+  padding: 6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  #dissapear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+      text-align: center;
+      background-image: $normal-background-color;
+      background-clip: text;
+      color: transparent;
+    }
+    p{
+      text-align: center;
+    }
+  }
+}
+
 
 @media only screen and (min-width: 300px){
 }
@@ -338,6 +362,13 @@ button:hover{
   #second{
     #right{
       width: 25rem;
+    }
+  }
+  #fourth{
+    #dissapear{
+      p{
+        width: 20rem;
+      }
     }
   }
 
@@ -376,6 +407,14 @@ button:hover{
   #third{
     margin: 3rem 15rem !important;
   }
+  #fourth{
+    #dissapear{
+      p{
+        width: 30rem;
+      }
+    }
+  }
+
 
     //CONTACT FORM
     #opacity{

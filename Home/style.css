@@ -315,9 +315,37 @@ button:hover {
   margin-right: 1rem;
 }
 
+#fourth {
+  padding: 6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+#fourth #dissapear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#fourth #dissapear h1 {
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+#fourth #dissapear p {
+  text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
   #second #right {
     width: 25rem;
+  }
+  #fourth #dissapear p {
+    width: 20rem;
   }
 }
 @media only screen and (min-width: 850px) {
@@ -348,6 +376,9 @@ button:hover {
   }
   #third {
     margin: 3rem 15rem !important;
+  }
+  #fourth #dissapear p {
+    width: 30rem;
   }
   #opacity {
     width: 100%;
