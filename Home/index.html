@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playball&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refined Vehicles - Inventory</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="../Home/images/favicon.png">
-    <title>Refined Vehicles - Home</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="style.css"> 
+
+    <!--FONT AWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playball&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="../Home/images/favicon.png">
   </head>
+
   <body>
-    <div id="top">
-    <center><div class="topnav" id="myTopnav">
-      <a href="../Inventory/index.html">Inventory</a>
-      <a href="../Sales/tradeins.html">Sell/Trades</a>
-      <a href="../Home/index.html"><img src="../Home/images/favicon.png" alt="logo"></a>
-      <a href="../Financing/financing.html">Financing</a>
-      <a href="../Contact Us/contactus.html">Contact Us</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div></center>
+
+    <!--HEADER-->
+    <div id="header-mobile">
+      <div id="top">
+          <a href="../Home/index.html"><img src="../Picture/logo.png" alt="logo"></a>
+          <i onclick="dropDown()" id="before" class="fas fa-bars"></i>
+          <i onclick="goUp()" id="after" class="fas fa-circle-notch"></i>
+  
+      </div>
+  
+      <div id="container">
+          <div id="bottom">
+              <a href="../Inventory/index.html">Inventory</a>
+              <a href="../Sales/tradeins.html" >Sell/Trades</a>
+              <a href="../Financing/financing.html">Financing</a>
+              <a href="../Contact Us/contactus.html">Contact Us</a>
+          </div>
+      </div>
     </div>
-      <br><br><br><br>
-      <!-- end of Navbar -->
-      <div id="header">
-      <button class="button button1"><a href="" target="_blank" style="color:white"><b>Used Cars</b></a></button>
-      <h1>USED CAR DEALERSHIP</h1>
-      <h2>Find your next car at Refined Vehicles</h2>
-      <button class="button button2"><a href="../Inventory/index.html" style="color: white"><b>OUR INVENTORY</b></a></button>
+    <div id="header-laptop">
+      <div id="top">
+              <a href="../Inventory/index.html">Inventory</a>
+              <a href="../Sales/tradeins.html" >Sell/Trades</a>
+              <a href="../Home/index.html"><img src="../Home/images/favicon.png" alt="logo"></a>
+              <a href="../Financing/financing.html">Financing</a>
+              <a href="../Contact Us/index.html">Contact us</a>
+      </div>
     </div>
-    <div id="car">
-      <img src="../Home/images/car.png" width="300px">
+
+    <div id="first">
+      <video id="car_animation" src="../Picture/Home/car_animation.mp4" autoplay muted></video>
+      <img id="top_car" src="../Picture/Home/top_car.png" alt="">
+      <div id="intro">
+        <p id="used">Used Car</p>
+        <h1>USED CAR DEALERSHIP</h1>
+        <div id="info">Find your next car at Refined Vehicles</div>
+        <a href="../Inventory/index.html"><button>OUR INVENTORY</button></a>
+      </div>
     </div>
-    <center><div class="introhead">
+
+  </body>
+     
+
+    <!--
+    <div class="introhead">
       <h1>WRITE SOMETHING ABOUT TEAM INTRODUCTION</h1>
       <p>Collaboration makes perfect team blah blah . Please make it about this length. Thank you.</p>
-    </div></center>
-    <center><div class="teamintro">
+    </div>
+    <div class="teamintro">
       <div class="intro">
         <img src="../Home/images/dan.jpg" width="70%">
         <p id="name"><b>Dan Nguyen</b></p>
@@ -63,8 +90,10 @@
         <p id="name"><b>Rishabh Anand</b></p>
         <p><u>Researcher & Accountant:</u> I have a large passion for learning, especially in the field of computer science and engineering I currently participate in our school's debate team and engineering competitions. My goal is the fuel this passion of mine through highschool and learn to apply it in my life.</p>
       </div>
-    </div></center>
+    </div>
     <hr>
+  -->
+  <!--
     <div class="footer">
       <div id="socials">
       <p><b>Social Media</b></p>
@@ -91,5 +120,9 @@
           <a href="https://twitter.com/westjags" target="_blank">Twitter</a>
           </div>
     </div>
-  </body>
+
+  -->
+
+  <script src="../navbar.js"></script>
+  <script src="/Home/script.js"></script>
 </html>

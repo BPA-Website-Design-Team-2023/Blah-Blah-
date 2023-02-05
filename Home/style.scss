@@ -3,177 +3,289 @@ $white: #ffff;
 $gray: gray;
 $pink: #D33BAC;
 $purple: #731AC3;
+
+$normal-background-color: linear-gradient(to bottom right, $pink, $purple);
+$reverse-background-color: linear-gradient(to bottom right, $purple, $pink);
+
+
+$normal-font: 13px;
+$normal-font-word-spacing: 3px;
+$normal-font-line-height:1.5;
+
+@font-face {
+    font-family: Montserrate;
+    src: url(../Fonts-family/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: League Spartant;
+    src: url(../Fonts-family/League_Spartan/static/LeagueSpartan-SemiBold.ttf);
+}
+
+*{
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    letter-spacing: 1px;
+    font-family: Montserrate;
+}
+
+
 body{
-    background-color: black;
+    background-color: $black;
+    overflow-y: hidden;
+
+}
+h1{
+    font-family: League Spartant;
+    font-size: 3rem;
+    color: $white;
 }
 p{
-  color: $white;
+    color: $white;
+    font-size: $normal-font;
+    font-family: Montserrate;
+    line-height: 1.5rem;
+}
+h3{
+    font-family: League Spartant;
+    font-size: 1.2rem;
 }
 hr{
-  height: 1.5px;
-  background-color: $purple;
-  border: none;
-  opacity: 0.25;
+    height: 1.5px;
+    background-color: $pink;
+    border: none;
+    opacity: 0.25;
+  }
+div{
+  color: $white;
 }
-   /*header*/
-   #header{
-    margin-left: 5%;
-    margin-top: 250px;
-    width: 15%;
-  }
-  #top img{
-    height: 70px;
-    margin-left: 5%;
-    position: relative;
-  }
-#car{
-  float: right;
+button{
+  color: $white;
+  padding: 1rem;
+  border-style: none;
+  background-image: $normal-background-color;
+  border-radius: 50px;
 }
-.introhead{
-  width: 50%;
-  h1{
-    font-size: 48px;
-    color: $purple;
-  }
-}
-.teamintro{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 90%;
-  p{
-    font-family: 'Montserrat', sans-serif;
-  }
-  .intro{
-    float: left;
-    width: 300px;
-  }
-  #name{
-    color: $purple;
-  }
-}
-.teamintro > div{
-  width: 400px;
-  margin: 10px;
-  text-align: center;
+button:hover{
+  background-image: $reverse-background-color;
+  cursor: pointer;
 }
 .footer{
-  #socials{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 10%;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-  }
-  p{
-    font-size: 20px;
-  }
-  a{
-    color: #848687;
-    text-decoration: none;
-    font-size: 18.3px;
-  }
-}
-/* navbar*/
-.navbar {
-    overflow: hidden;
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    top:0;
+    #socials{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 10%;
+      float: left;
+      font-family: 'Montserrat', sans-serif;
+    }
+    p{
+      font-size: 20px;
+      color: $white;
+    }
     a{
-      float: right;
-      font-size: 16px 16px;
-      color: white;
-      text-align: center;
-      padding: 20px 16px;
+      color: #848687;
       text-decoration: none;
-      font-family: 'Montserrat', sans-serif;
-      a:hover{
-        text-decoration: underline;
-      }
+      font-size: 18.3px;
     }
   }
-  /* Topnav*/
-.topnav {
-    overflow: hidden;
-    background-color: black;
-    position: fixed;
+
+#header-mobile{
     width: 100%;
-    top:0;
-    a {
-      font-size: 16px 16px;
-      color: white;
-      text-align: center;
-      padding: 20px 16px;
-      text-decoration: none;
-      font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    background-color: $black;
+    z-index: 5;
+    #top{
+        width: 100%;
+        height: 4rem;
+        background-color: $black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        #after{
+            display: none;
+        }
+        i{
+            position: absolute;
+            right: 2rem;
+            font-size: 1.5rem;
+            color: $white;
+        }
+        i:hover{
+            cursor: pointer;
+            color: $pink;
+        }
+        img{
+            height: 2.5rem;
+            padding-left: 2rem;
+        }
     }
-    .icon {
-      display: none;
+    #container{
+        display: none;
+        #bottom{
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            //background-color: green;
+            padding: 2rem;
+            a{
+                text-decoration: none;
+                color: $white;
+                padding: 0 0 2rem 0;
+            }
+            a:hover{
+                color: $pink;
+            }
+        }
     }
-    a:hover {
-      color: $purple;
-      border-radius: 10px;
+}
+#header-laptop{
+    width: 100%;
+    position: fixed;
+    background-color: $black;
+    z-index: 5;
+    height: 4rem;
+    display: flex;
+    overflow-y: hidden;
+
+    #top{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 5px;
     }
-  }
-  @media screen and (max-width: 800px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
-      display: none;
+    img{
+        height: 3.5rem;
     }
-    .topnav a.icon {
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 800px) {
-    .topnav.responsive { position: -webkit-sticky; position: sticky;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }}
-    /*end of navbar*/
-    .button{
-      border: none;
-      color: white;
-      text-align: center;
       a{
         text-decoration: none;
+        color: $white;
+        margin-left: 3rem;
       }
+      a:hover{
+        border-bottom: 2px solid $white;
+      }
+    display: none;
+}
+
+#first{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  #car_animation{
+    width: 100%;
+    //height: 100vh;
+    display: none;
+  }
+
+  #top_car{
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50%;
+  }
+  #intro{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 17rem;
+    padding-left: 2rem;
+    #used{
+      padding: .2rem .5rem;
+      margin-bottom: 1rem;
+      background-color: $gray;
+      width: fit-content;
+      border-radius: 50px;
     }
-    .button1{
-      background-color: #646668;
-      text-decoration: none;
-      border-radius: 25px;
-      padding: 5px 10px;
+    #info{
+      padding-bottom: 2rem;
     }
-    .button2{
-      background-color: black;
-      color: white;
-      text-decoration: none;
-      width: 90%;
-      border-radius: 40px;
-      padding: 15px 25px;
-      border: 2px solid #8C52FF;
-      transition-duration: 0.5s;
+  }
+}
+
+
+
+@media only screen and (min-width: 300px){
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 850px) {
+
+  #header-mobile{
+    display:none;
+  }
+  #header-laptop{
+      display: block;
+  }
+
+  #first{
+    #top_car{
+      display: none;
     }
-    .button2:hover{
-      cursor: pointer;
-      background-color: $purple;
+    #car_animation{
+      display: block;
     }
-    h1{
-      color: white;
-      font-family: 'League Spartan', sans-serif;
-      font-size: 48px;
+    #intro{
+      margin-left: 5%;
     }
-    h2{
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 20.3px;
+  }
+
+    //CONTACT FORM
+    #opacity{
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        position: fixed;
+        opacity: 0.5;
+        z-index: 8;
     }
+    #contact{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90%;
+        border-radius: 5px;
+        iframe{
+            pointer-events: visible;
+            opacity: 1;
+            height: 300px;
+        }
+        form{
+            border-radius: 5px;
+            padding-left: 2rem;
+            width: 300px !important;
+            height: 500px;
+            background-color: $white;
+            position: absolute;
+            left: 75%;
+            
+            h1{
+                display: none;
+            }
+            #input{
+                padding-top: 0 !important;
+            }
+            input{
+                color: $black !important;
+                border-bottom: 1px solid $black !important;
+            }
+            input::placeholder{
+                color: $black !important;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    #inventory{
+        #box{
+            width: 32%;
+        }
+    }
+}
