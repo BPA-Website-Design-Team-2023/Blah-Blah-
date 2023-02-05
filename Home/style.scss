@@ -277,7 +277,7 @@ button:hover{
       width: 45%;
       i{
         color: $purple;
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
       h4{
         font-family: League Spartant;
@@ -287,6 +287,46 @@ button:hover{
     }
   }
 
+}
+
+#third{
+  background-image: $normal-background-color;
+  margin: 3rem 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
+  #left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 5rem;
+    color: $purple;
+  }
+  #right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 5rem;
+    color: $pink;
+  }
+  #container{
+    background-color: $black;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    #person{
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      img{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50px;
+        margin-right: 1rem;
+      }
+    }
+  }
 }
 
 
@@ -300,6 +340,7 @@ button:hover{
       width: 25rem;
     }
   }
+
 }
 
 @media only screen and (min-width: 850px) {
@@ -331,6 +372,9 @@ button:hover{
     #right{
       margin-right:5%;
     }
+  }
+  #third{
+    margin: 3rem 15rem !important;
   }
 
     //CONTACT FORM
