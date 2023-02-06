@@ -328,20 +328,20 @@ button:hover{
 }
 
 #fourth{
+  position: relative;
   margin-top: 10rem;
   padding: 6rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  //background-color: #731AC3;
+  height: 100vh;
   #dissapear{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation-name: dissapear;
-    animation-duration: 3s;
-    animation-delay: 2s;
 
     h1{
       text-align: center;
@@ -354,11 +354,14 @@ button:hover{
     }
   }
   #appear{
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80%;
     display: none;
+    margin: 6rem 0;
     #top, #bottom{
       width: 100%;
       #person{

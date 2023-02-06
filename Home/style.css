@@ -314,24 +314,20 @@ button:hover {
 }
 
 #fourth {
+  position: relative;
   margin-top: 10rem;
   padding: 6rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 #fourth #dissapear {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  -webkit-animation-name: dissapear;
-          animation-name: dissapear;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
 #fourth #dissapear h1 {
   text-align: center;
@@ -344,11 +340,14 @@ button:hover {
   text-align: center;
 }
 #fourth #appear {
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80%;
   display: none;
+  margin: 6rem 0;
 }
 #fourth #appear #top, #fourth #appear #bottom {
   width: 100%;
