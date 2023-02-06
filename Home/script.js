@@ -14,7 +14,6 @@ function appearAnimation(){
        $("#appear").fadeIn(5000);
        if(innerWidth >= 850){
         document.getElementById("appear").style.display = "flex";
-        //document.getElementById("fourth").style.height = "20rem";
        }
        
     }
