@@ -129,7 +129,6 @@ button:hover {
 #header-laptop {
   width: 100%;
   position: fixed;
-  background-color: #000;
   z-index: 5;
   height: 4rem;
   display: flex;
@@ -161,7 +160,6 @@ button:hover {
   overflow-y: hidden;
 }
 #first #car_animation {
-  margin-left: 2.5%;
   width: 100%;
   display: none;
 }
@@ -278,7 +276,7 @@ button:hover {
 
 #third {
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  margin: 3rem 1rem;
+  margin: 6rem 1rem !important;
   padding: 1rem;
   border-radius: 5px;
   position: relative;
@@ -316,18 +314,24 @@ button:hover {
 }
 
 #fourth {
+  margin-top: 10rem;
   padding: 6rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
 }
 #fourth #dissapear {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  -webkit-animation-name: dissapear;
+          animation-name: dissapear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 #fourth #dissapear h1 {
   text-align: center;
@@ -339,6 +343,22 @@ button:hover {
 #fourth #dissapear p {
   text-align: center;
 }
+#fourth #appear {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  display: none;
+}
+#fourth #appear #top, #fourth #appear #bottom {
+  width: 100%;
+}
+#fourth #appear #top #person img, #fourth #appear #bottom #person img {
+  width: 100%;
+}
+#fourth #appear #top #person #name, #fourth #appear #bottom #person #name {
+  color: #731AC3;
+}
 
 @media only screen and (min-width: 600px) {
   #second #right {
@@ -346,6 +366,18 @@ button:hover {
   }
   #fourth #dissapear p {
     width: 20rem;
+  }
+  #fourth #appear {
+    width: 90%;
+  }
+  #fourth #appear #top, #fourth #appear #bottom {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #fourth #appear #top #person, #fourth #appear #bottom #person {
+    width: 10rem;
   }
 }
 @media only screen and (min-width: 850px) {
@@ -357,9 +389,6 @@ button:hover {
   }
   #header-laptop {
     display: block;
-  }
-  #first {
-    background-color: #525152;
   }
   #first #top_car {
     display: none;
@@ -379,6 +408,9 @@ button:hover {
   }
   #fourth #dissapear p {
     width: 30rem;
+  }
+  #fourth #appear {
+    flex-direction: row;
   }
   #opacity {
     width: 100%;

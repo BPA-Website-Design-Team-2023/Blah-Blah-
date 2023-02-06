@@ -139,7 +139,6 @@ button:hover{
 #header-laptop{
     width: 100%;
     position: fixed;
-    background-color: $black;
     z-index: 5;
     height: 4rem;
     display: flex;
@@ -171,7 +170,6 @@ button:hover{
   height: 100vh;
   overflow-y: hidden;
   #car_animation{
-    margin-left: 2.5%;
     width: 100%;
     //height: 100vh;
     display: none;
@@ -291,7 +289,7 @@ button:hover{
 
 #third{
   background-image: $normal-background-color;
-  margin: 3rem 1rem;
+  margin: 6rem 1rem !important;
   padding: 1rem;
   border-radius: 5px;
   position: relative;
@@ -330,17 +328,21 @@ button:hover{
 }
 
 #fourth{
+  margin-top: 10rem;
   padding: 6rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
   #dissapear{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation-name: dissapear;
+    animation-duration: 3s;
+    animation-delay: 2s;
+
     h1{
       text-align: center;
       background-image: $normal-background-color;
@@ -349,6 +351,24 @@ button:hover{
     }
     p{
       text-align: center;
+    }
+  }
+  #appear{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    display: none;
+    #top, #bottom{
+      width: 100%;
+      #person{
+        img{
+          width: 100%;
+        }
+        #name{
+          color: #731AC3;
+        }
+      }
     }
   }
 }
@@ -370,7 +390,20 @@ button:hover{
         width: 20rem;
       }
     }
+    #appear{
+      width: 90%;
+      #top, #bottom{
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        #person{
+          width: 10rem;
+        }
+      }
+    }
   }
+
 
 }
 
@@ -386,7 +419,6 @@ button:hover{
   }
 
   #first{
-    background-color: #525152;
     #top_car{
       display: none;
     }
@@ -413,8 +445,10 @@ button:hover{
         width: 30rem;
       }
     }
+    #appear{
+      flex-direction: row;
+    }
   }
-
 
     //CONTACT FORM
     #opacity{
