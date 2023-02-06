@@ -329,7 +329,7 @@ button:hover{
 
 #fourth{
   position: relative;
-  margin-top: 10rem;
+  //margin-top: 10rem;
   padding: 6rem 1rem;
   display: flex;
   flex-direction: column;
@@ -361,7 +361,7 @@ button:hover{
     justify-content: center;
     width: 80%;
     display: none;
-    margin: 6rem 0;
+    //margin: 6rem 0;
     #top, #bottom{
       width: 100%;
       #person{
@@ -450,6 +450,7 @@ button:hover{
     }
     #appear{
       flex-direction: row;
+      margin-top: 20rem;
     }
   }
 

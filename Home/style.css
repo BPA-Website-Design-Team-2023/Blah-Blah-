@@ -315,7 +315,6 @@ button:hover {
 
 #fourth {
   position: relative;
-  margin-top: 10rem;
   padding: 6rem 1rem;
   display: flex;
   flex-direction: column;
@@ -347,7 +346,6 @@ button:hover {
   justify-content: center;
   width: 80%;
   display: none;
-  margin: 6rem 0;
 }
 #fourth #appear #top, #fourth #appear #bottom {
   width: 100%;
@@ -410,6 +408,7 @@ button:hover {
   }
   #fourth #appear {
     flex-direction: row;
+    margin-top: 20rem;
   }
   #opacity {
     width: 100%;
