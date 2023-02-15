@@ -5,20 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refined Vehicles - Contact Us</title>
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="style.css"> 
+
+    <!--FONT AWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playball&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" type="image/png" href="/Home/images/favicon.png">
 </head>
 <body>
+  <div id="header-mobile">
     <div id="top">
-        <a href="/Home/index.html"><img src="../Home/images/favicon.png" alt="logo"></a>
-      <div class="topnav" id="myTopnav">
-        <a href="/Home/contactus.html">Contact Us</a>
-        <a href="/Home/financing.html">Financing</a>
-        <a href="/Home/tradeins.html">Sell/Trades</a>
-        <a href="/Home/inventory.html">Inventory</a>
-        <a href="/Home/index.html">Home</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="../Home/index.html"><img src="../Picture/logo.png" alt="logo"></a>
+        <i onclick="dropDown()" id="before" class="fas fa-bars"></i>
+        <i onclick="goUp()" id="after" class="fas fa-circle-notch"></i>
+  
+    </div>
+  
+    <div id="container">
+        <div id="bottom">
+            <a href="../Inventory/index.html">Inventory</a>
+            <a href="../Sales/tradeins.html" >Sell/Trades</a>
+            <a href="../Financing/financing.html">Financing</a>
+            <a href="../Contact Us/contactus.html">Contact Us</a>
         </div>
-      </div>
+    </div>
+  </div>
+  <div id="header-laptop">
+    <div id="top">
+        <a href="../Home/index.html"><img src="../Home/images/favicon.png" alt="logo"></a>
+        <div id="nav">
+            <a href="../Inventory/index.html">Inventory</a>
+            <a href="../Sales/tradeins.html" >Sell/Trades</a>
+            <a href="../Financing/financing.html">Financing</a>
+            <a href="../Contact Us/contactus.html">Contact us</a>
+        </div>
+    </div>
+  </div>
         <br><br><br><br>
+        <hr>
+        <div class="footer">
+          <div id="socials">
+          <p><b>Social Media</b></p>
+          <a href="https://www.facebook.com/westjags" target="_blank">Facebook</a>
+          <br><br>
+          <a href="https://www.instagram.com/westjags/" target="_blank">Instagram</a>
+          <br><br>
+          <a href="https://twitter.com/westjags" target="_blank">Twitter</a>
+          </div>
+          <div id="socials">
+            <p><b>Social Media</b></p>
+            <a href="https://www.facebook.com/westjags" target="_blank">Facebook</a>
+            <br><br>
+            <a href="https://www.instagram.com/westjags/" target="_blank">Instagram</a>
+            <br><br>
+            <a href="https://twitter.com/westjags" target="_blank">Twitter</a>
+            </div>
+            <div id="socials">
+              <p><b>Social Media</b></p>
+              <a href="https://www.facebook.com/westjags" target="_blank">Facebook</a>
+              <br><br>
+              <a href="https://www.instagram.com/westjags/" target="_blank">Instagram</a>
+              <br><br>
+              <a href="https://twitter.com/westjags" target="_blank">Twitter</a>
+              </div>
+        </div>
 </body>
+<script src="../navbar.js"></script>
 </html>
