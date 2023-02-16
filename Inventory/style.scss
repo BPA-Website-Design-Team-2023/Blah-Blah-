@@ -268,20 +268,41 @@ hr{
         width: 93%;
         justify-content: space-between;
         align-items: center;
-        #list{
+        .list{
             background-image: $normal-background-color;
             color: $white;
             display: flex;
             height: 3rem;
             border-radius: 25px;
-            display: flex;
             align-items: center;
             padding: 0 1rem;
-            width: 36%;
+            cursor: pointer;
             justify-content: space-between;
             i{
                 font-size:10px;
             }
+        }
+        .dropdown-menu {
+            display: none;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            height: 6rem;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 5px;
+            border-radius: 5px;
+            button {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                border-color: #f1f1f1;
+                box-shadow: none;
+            }
+        }
+        .show {
+            display: flex;
         }
         #menu{
             background-image: $normal-background-color;
@@ -301,7 +322,7 @@ hr{
     position: relative;
     left: 50%;
     transform: translate(-50%,0);
-    #box{
+    .box{
         background-color: $white;
         border-radius: 5px;
         margin-top: 1rem;
@@ -347,6 +368,22 @@ hr{
                 padding: 1rem;
                 border-radius: 5px;
             }
+            button:hover {
+                background-image: $reverse-background-color;
+            }
+            button:enabled:active {
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            button:disabled,
+            button[disabled]{
+                color: $white;
+                background-image: $normal-background-color;
+                border-style: none;
+                padding: 1rem;
+                border-radius: 5px;
+                cursor: not-allowed;
+            }
         }
     }
 }
@@ -360,8 +397,8 @@ hr{
 
 @media only screen and (min-width: 600px) {
     #filter{
-        #list{
-            width: 25% !important;
+        .list{
+            width: 36% !important;
         }
         .first{
             display: inline-flex !important;
@@ -384,8 +421,8 @@ hr{
     }
 
     #filter{
-        #list{
-            width: 15% !important;
+        .list{
+            width: 25% !important;
         }
         .second, .third{
             display: inline-flex !important;
@@ -396,7 +433,7 @@ hr{
         display: flex;
         flex-flow: wrap;
         justify-content: space-between !important;
-        #box{
+        .box{
             width: 49%;
         }
     }
@@ -458,8 +495,8 @@ hr{
         display: block;
     }
     #filter{
-        #list{
-            width: 12.5% !important;
+        .list{
+            width: 15% !important;
         }
         .fourth{
             display: inline-flex !important;
@@ -469,7 +506,7 @@ hr{
         }
     }
     #inventory{
-        #box{
+        .box{
             width: 32%;
         }
     }

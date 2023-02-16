@@ -180,12 +180,6 @@ hr {
   padding-top: 3rem;
   color: white;
 }
-#contact form #input input::-moz-placeholder {
-  color: white;
-}
-#contact form #input input:-ms-input-placeholder {
-  color: white;
-}
 #contact form #input input::placeholder {
   color: white;
 }
@@ -259,20 +253,41 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
-#search #filter #list {
+#search #filter .list {
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
   color: white;
   display: flex;
   height: 3rem;
   border-radius: 25px;
-  display: flex;
   align-items: center;
   padding: 0 1rem;
-  width: 36%;
+  cursor: pointer;
   justify-content: space-between;
 }
-#search #filter #list i {
+#search #filter .list i {
   font-size: 10px;
+}
+#search #filter .dropdown-menu {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  height: 6rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 5px;
+  border-radius: 5px;
+}
+#search #filter .dropdown-menu button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-color: #f1f1f1;
+  box-shadow: none;
+}
+#search #filter .show {
+  display: flex;
 }
 #search #filter #menu {
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
@@ -290,26 +305,26 @@ hr {
   left: 50%;
   transform: translate(-50%, 0);
 }
-#inventory #box {
+#inventory .box {
   background-color: white;
   border-radius: 5px;
   margin-top: 1rem;
 }
-#inventory #box img {
+#inventory .box img {
   width: 100%;
 }
-#inventory #box h3 {
+#inventory .box h3 {
   padding: 1rem 1rem 0 1rem;
 }
-#inventory #box p {
+#inventory .box p {
   font-size: 12px;
 }
-#inventory #box #info {
+#inventory .box #info {
   padding: 0 1rem;
   display: flex;
   flex-direction: row;
 }
-#inventory #box #bottom {
+#inventory .box #bottom {
   display: flex;
   flex-direction: row;
   padding: 3rem 1rem 1rem 1rem;
@@ -337,10 +352,27 @@ hr {
   padding: 1rem;
   border-radius: 5px;
 }
+#inventory #skip #left button:hover, #inventory #skip #right button:hover {
+  background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
+}
+#inventory #skip #left button:enabled:active, #inventory #skip #right button:enabled:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#inventory #skip #left button:disabled,
+#inventory #skip #left button[disabled], #inventory #skip #right button:disabled,
+#inventory #skip #right button[disabled] {
+  color: white;
+  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
+  border-style: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
 
 @media only screen and (min-width: 600px) {
-  #filter #list {
-    width: 25% !important;
+  #filter .list {
+    width: 36% !important;
   }
   #filter .first {
     display: inline-flex !important;
@@ -356,8 +388,8 @@ hr {
   #header-mobile #top i {
     font-size: 2.7rem;
   }
-  #filter #list {
-    width: 15% !important;
+  #filter .list {
+    width: 25% !important;
   }
   #filter .second, #filter .third {
     display: inline-flex !important;
@@ -367,7 +399,7 @@ hr {
     flex-flow: wrap;
     justify-content: space-between !important;
   }
-  #inventory #box {
+  #inventory .box {
     width: 49%;
   }
   #opacity {
@@ -411,12 +443,6 @@ hr {
     color: #000 !important;
     border-bottom: 1px solid #000 !important;
   }
-  #contact form input::-moz-placeholder {
-    color: #000 !important;
-  }
-  #contact form input:-ms-input-placeholder {
-    color: #000 !important;
-  }
   #contact form input::placeholder {
     color: #000 !important;
   }
@@ -428,8 +454,8 @@ hr {
   #header-laptop {
     display: block;
   }
-  #filter #list {
-    width: 12.5% !important;
+  #filter .list {
+    width: 15% !important;
   }
   #filter .fourth {
     display: inline-flex !important;
@@ -437,7 +463,9 @@ hr {
   #filter #menu {
     display: none !important;
   }
-  #inventory #box {
+  #inventory .box {
     width: 32%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refined Vehicles - Inventory</title>
-
-    <!--STYLESHEET-->
-    <link rel="stylesheet" href="style.css"> 
-
-    <!--FONT AWSOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
-
-    <!--GOOGLE FONT-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playball&display=swap" rel="stylesheet">
-
-    <link rel="shortcut icon" type="image/png" href="../Home/images/favicon.png">
-</head>
-
-
-<body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Refined Vehicles - Inventory
+  </title>
+  <!--STYLESHEET-->
+  <link href="style.css" rel="stylesheet"/>
+  <!--FONT AWSOME-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet"/>
+  <!--GOOGLE FONT-->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;family=Playball&amp;display=swap" rel="stylesheet"/>
+  <link href="../Home/images/favicon.png" rel="shortcut icon" type="image/png"/>
+ </head>
+ <body>
   <!--CONTACT FORM
     <div id="opacity"></div>
     <div id="contact">
@@ -68,425 +63,313 @@
             </div>
       </div>
     </div>-->
-
-    <div id="header-mobile">
-      <div id="top">
-          <a href="../Home/index.html"><img src="../Picture/logo.png" alt="logo"></a>
-          <i onclick="dropDown()" id="before" class="fas fa-bars"></i>
-          <i onclick="goUp()" id="after" class="fas fa-circle-notch"></i>
-  
-      </div>
-  
-      <div id="container">
-          <div id="bottom">
-              <a href="../Inventory/index.html">Inventory</a>
-              <a href="../Sales/tradeins.html" >Sell/Trades</a>
-              <a href="../Financing/financing.html">Financing</a>
-              <a href="../Contact Us/contactus.html">Contact Us</a>
-          </div>
-      </div>
+  <div id="header-mobile">
+   <div id="top">
+    <a href="../Home/index.html">
+     <img alt="logo" src="../Picture/logo.png"/>
+    </a>
+    <i class="fas fa-bars" id="before" onclick="dropDown()">
+    </i>
+    <i class="fas fa-circle-notch" id="after" onclick="goUp()">
+    </i>
+   </div>
+   <div id="container">
+    <div id="bottom">
+     <a href="../Inventory/index.html">
+      Inventory
+     </a>
+     <a href="../Sales/tradeins.html">
+      Sell/Trades
+     </a>
+     <a href="../Financing/financing.html">
+      Financing
+     </a>
+     <a href="../Contact Us/contactus.html">
+      Contact Us
+     </a>
     </div>
-    <div id="header-laptop">
-      <div id="top">
-          <a href="../Home/index.html"><img src="../Home/images/favicon.png" alt="logo"></a>
-          <div id="nav">
-              <a href="../Inventory/index.html">Inventory</a>
-              <a href="../Sales/tradeins.html" >Sell/Trades</a>
-              <a href="../Financing/financing.html">Financing</a>
-              <a href="../Contact Us/index.html">Contact us</a>
-          </div>
-      </div>
-    </div>
-  
-    <div id="main">
-  
-      <div id="search">
-          <form id="search-bar" action="/action_page.php">
-            <i id="icon" class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search Make, Model, or Keyword" name="search">
-            <button type="submit" id="go"><p>GO</p></button>
-          </form>
-  
-          <ul id="filter">
-  
-            <div id="list">
-              <p>Price</p>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-  
-            <div id="list">
-              <p>Make & Model</p>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-  
-            <div id="list" class="first" style="display: none;">
-              <p>Body Type</p>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-  
-            <div id="list" class="second" style="display: none;">
-              <p>Mileage</p>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-  
-            <div id="list" class="third" style="display: none;">
-              <p>Features</p>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-  
-            <div id="list" class="fourth" style="display: none">
-              <p>More</p>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-  
-            <div id="menu">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-          </ul>
-      </div>
-  
-      <div id="inventory">
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002085369/hero.jpg?" alt="">
-          <h3>2014 Mercedes-Benz C-Class</h3>
-          <div id="info">
-            <p>C 300 4MATIC Luxury</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 76,808 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$17,990</h1>
-            <p id="payment">Est. $431/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2001997982/hero.jpg?width=449" alt="">
-          <h3>2020 Mazda CX-5</h3>
-          <div id="info">
-            <p>Touring</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 51,839 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$23,590</h1>
-            <p id="payment">Est. $466/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002138799/hero.jpg?width=449" alt="">
-          <h3>2014 Cadillac ELR</h3>
-          <div id="info">
-            <p>base</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 56,500 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$24,990</h1>
-            <p id="payment">Est. $494/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002033011/hero.jpg?width=449" alt="">
-          <h3>2017 Dodge Journey</h3>
-          <div id="info">
-            <p>Crossroad Plus</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 87,543 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$16,590</h1>
-            <p id="payment">Est. $413/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002022441/hero.jpg?width=449" alt="">
-          <h3>2016 Ford Edge</h3>
-          <div id="info">
-            <p>SEL</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 70,853 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$18,990</h1>
-            <p id="payment">Est. $387/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2001915946/hero.jpg?width=449" alt="">
-          <h3>2011 Lincoln Town Car</h3>
-          <div id="info">
-            <p>Signature Limited</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 45,032 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$19,590</h1>
-            <p id="payment">Est. $506/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002145821/hero.jpg?width=449" alt="">
-          <h3>2015 Nissan Versa</h3>
-          <div id="info">
-            <p>S Plus</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 54,216 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$13,590</h1>
-            <p id="payment">Est. $336/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002177921/hero.jpg?width=449" alt="">
-          <h3>2014 Dodge Charger</h3>
-          <div id="info">
-            <p>SXT</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 108,942 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$15,990</h1>
-            <p id="payment">Est. $399/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002174677/hero.jpg?width=449" alt="">
-          <h3>2010 Nissan Versa</h3>
-          <div id="info">
-            <p>S</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 49,884 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$11,990</h1>
-            <p id="payment">Est. $296/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002144035/hero.jpg?width=449" alt="">
-          <h3>2016 Jeep Renegade</h3>
-          <div id="info">
-            <p>75th Anniversary</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 37,367 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$20,990</h1>
-            <p id="payment">Est. $414/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002140410/hero.jpg?width=449" alt="">
-          <h3>2011 Mercedes-Benz SLK-Class</h3>
-          <div id="info">
-            <p>SLK 300</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 20,836 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$23,990</h1>
-            <p id="payment">Est. $597/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002156988/hero.jpg?width=449" alt="">
-          <h3>2019 Buick Regal Sportback</h3>
-          <div id="info">
-            <p>Preferred II</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 44,961 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$22,990</h1>
-            <p id="payment">Est. $472/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002057774/hero.jpg?width=449" alt="">
-          <h3>2016 Jaguar XF</h3>
-          <div id="info">
-            <p>XF 3.5t Prestige</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 50,114 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$24,990</h1>
-            <p id="payment">Est. $512/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2001976448/hero.jpg?width=449" alt="">
-          <h3>2019 Buick Cascada</h3>
-          <div id="info">
-            <p>Premium</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 47,328 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$23,590</h1>
-            <p id="payment">Est. $484/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2001989781/hero.jpg?width=449" alt="">
-          <h3>2016 Jaguar XF</h3>
-          <div id="info">
-            <p>XF 3.5 Prestige</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 65,604 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$23,590</h1>
-            <p id="payment">Est. $499/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002069983/hero.jpg?width=449" alt="">
-          <h3>2013 Mercedes-Benz SLK-Class</h3>
-          <div id="info">
-            <p>SLK 250</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 61,715 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$22,590</h1>
-            <p id="payment">Est. $478/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002164073/hero.jpg?width=449" alt="">
-          <h3>2017 Jaguar XE</h3>
-          <div id="info">
-            <p>XE 25t Premium</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 26,164 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$24,990</h1>
-            <p id="payment">Est. $524/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002086748/hero.jpg?width=449" alt="">
-          <h3>2015 BMW 5 Series</h3>
-          <div id="info">
-            <p>535i</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 67,146 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$23,990</h1>
-            <p id="payment">Est. $600/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002093317/hero.jpg?width=449" alt="">
-          <h3>2012 Mercedes-Benz E-Class</h3>
-          <div id="info">
-            <p>E 350</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 79,545 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$17,590</h1>
-            <p id="payment">Est. $450/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002066168/hero.jpg?width=449" alt="">
-          <h3>2009 Saturn Sky</h3>
-          <div id="info">
-            <p>base</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 19,501 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$17,590</h1>
-            <p id="payment">Est. $421/mo</p>
-          </div>
-        </div>
-
-        <div id="box">
-          <img src="https://vexgateway.fastly.carvana.io/2002217719/hero.jpg?width=449" alt="">
-          <h3>2010 Chevrolet Camaro</h3>
-          <div id="info">
-            <p>SS</p>
-            <p style="font-size:20px; padding: 0 5px">&#x2022;</p>
-            <p id="mile"> 78,451 miles</p>
-          </div>
-          <div id="bottom">
-            <h1 id="price">$23,990</h1>
-            <p id="payment">Est. $578/mo</p>
-          </div>
-        </div>
-
-        <div id="skip">
-          <div id="left">
-            <i class="fa-solid fa-angles-left"></i>
-            <button style="margin-left: 5px;">BACK</button>
-          </div>
-          
-          <p>Page 1 of 1390</p>
-  
-          <div id="right">
-            <button style="margin-right: 5px;">NEXT</button>
-            <i class="fa-solid fa-angles-right"></i>
-          </div>
-        </div>
-      </div>
-  
-    </div>
-    <hr>
-    <div class="footer">
-      <div id="socials">
-      <p><b>Social Media</b></p>
-      <br>
-      <a href="https://www.facebook.com/westjags" target="_blank">Facebook</a>
-      <br><br>
-      <a href="https://www.instagram.com/westjags/" target="_blank">Instagram</a>
-      <br><br>
-      <a href="https://twitter.com/westjags" target="_blank">Twitter</a>
-      </div>
-      <div id="socials">
-        <p><b>Social Media</b></p>
-        <br>
-        <a href="https://www.facebook.com/westjags" target="_blank">Facebook</a>
-        <br><br>
-        <a href="https://www.instagram.com/westjags/" target="_blank">Instagram</a>
-        <br><br>
-        <a href="https://twitter.com/westjags" target="_blank">Twitter</a>
-        </div>
-        <div id="socials">
-          <p><b>Social Media</b></p>
-          <br>
-          <a href="https://www.facebook.com/westjags" target="_blank">Facebook</a>
-          <br><br>
-          <a href="https://www.instagram.com/westjags/" target="_blank">Instagram</a>
-          <br><br>
-          <a href="https://twitter.com/westjags" target="_blank">Twitter</a>
-          </div>
+   </div>
   </div>
-</body>
-
-<script src="../navbar.js"></script>
+  <div id="header-laptop">
+   <div id="top">
+    <a href="../Home/index.html">
+     <img alt="logo" src="../Home/images/favicon.png"/>
+    </a>
+    <div id="nav">
+     <a href="../Inventory/index.html">
+      Inventory
+     </a>
+     <a href="../Sales/tradeins.html">
+      Sell/Trades
+     </a>
+     <a href="../Financing/financing.html">
+      Financing
+     </a>
+     <a href="../Contact Us/index.html">
+      Contact us
+     </a>
+    </div>
+   </div>
+  </div>
+  <div id="main">
+   <div id="search">
+    <form action="javascript:void(0);" id="search-bar" onsubmit="filter_search(document.getElementById('search-text').value)">
+     <i class="fa-solid fa-magnifying-glass" id="icon">
+     </i>
+     <input id="search-text" name="search" placeholder="Search Make, Model, or Keyword" type="text"/>
+     <button id="go" type="submit">
+      <p>
+       GO
+      </p>
+     </button>
+    </form>
+    <ul id="filter">
+     <button class="list" onclick="revealDropDown('price-down')">
+      <p id="price-text">
+       Price
+      </p>
+      <i class="fa-solid fa-chevron-down">
+      </i>
+     </button>
+     <div class="dropdown-menu" id="price-down">
+      <ul>
+       <li>
+        <button class="dropdown-item" onclick="filter_price(0, 15000)">
+         &lt; $15,000
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_price(15000, 20000)">
+         $15,000 - $20,000
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_price(20000, -1)">
+         &gt; $20,000
+        </button>
+       </li>
+      </ul>
+     </div>
+     <button class="list" onclick="revealDropDown('miles-down')">
+      <p id="miles-text">
+       Miles
+      </p>
+      <i class="fa-solid fa-chevron-down">
+      </i>
+     </button>
+     <div class="dropdown-menu" id="miles-down">
+      <ul>
+       <li>
+        <button class="dropdown-item" onclick="filter_miles(0, 25000)">
+         &lt; 25,000
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_miles(25000, 50000)">
+         25,000 - 50,000
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_miles(75000, -1)">
+         &gt; 75,000
+        </button>
+       </li>
+      </ul>
+     </div>
+     <button class="list" onclick="revealDropDown('year-down')">
+      <p id="year-text">
+       Year
+      </p>
+      <i class="fa-solid fa-chevron-down">
+      </i>
+     </button>
+     <div class="dropdown-menu" id="year-down">
+      <ul>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2009)">
+         2009
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2010)">
+         2010
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2011)">
+         2011
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2012)">
+         2012
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2013)">
+         2013
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2014)">
+         2014
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2015)">
+         2015
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2016)">
+         2016
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2017)">
+         2017
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2019)">
+         2019
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_year(2020)">
+         2020
+        </button>
+       </li>
+      </ul>
+     </div>
+     <button class="list" onclick="revealDropDown('manufacturer-down')">
+      <p id="manufacturer-text">
+       Manufacturer
+      </p>
+      <i class="fa-solid fa-chevron-down">
+      </i>
+     </button>
+     <div class="dropdown-menu" id="manufacturer-down">
+      <ul>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Cadillac')">
+         Cadillac
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Mazda')">
+         Mazda
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Mercedes-Benz')">
+         Mercedes-Benz
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Chevrolet')">
+         Chevrolet
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Lincoln')">
+         Lincoln
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Nissan')">
+         Nissan
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Dodge')">
+         Dodge
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Buick')">
+         Buick
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Saturn')">
+         Saturn
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('BMW')">
+         BMW
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Jeep')">
+         Jeep
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Ford')">
+         Ford
+        </button>
+       </li>
+       <li>
+        <button class="dropdown-item" onclick="filter_manufacturer('Jaguar')">
+         Jaguar
+        </button>
+       </li>
+      </ul>
+     </div>
+     <div id="menu">
+      <i class="fa-solid fa-ellipsis-vertical">
+      </i>
+     </div>
+    </ul>
+   </div>
+   <div id="inventory">
+    <!--    Cars will be inserted here by the javascript running on the users computer extracting cars from car_list.json-->
+    <div id="skip">
+     <div id="left">
+      <button disabled="" onclick="backward()" style="margin-left: 5px;">
+       &lt; BACK
+      </button>
+     </div>
+     <p id="page-count">
+      Page 1 of 1
+     </p>
+     <div id="right">
+      <button onclick="forward()" style="margin-right: 5px;">
+       NEXT &gt;
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <hr/>
+  <div class="footer">
+   <div id="socials">
+    <p>
+     <b>
+      Social Media
+     </b>
+    </p>
+    <br/>
+    <a href="https://www.facebook.com/westjags" target="_blank">
+     Facebook
+    </a>
+    <br/>
+    <br/>
+    <a href="https://www.instagram.com/westjags/" target="_blank">
+     Instagram
+    </a>
+    <br/>
+    <br/>
+    <a href="https://twitter.com/westjags" target="_blank">
+     Twitter
+    </a>
+   </div>
+  </div>
+ </body>
+ <script src="../navbar.js">
+ </script>
+ <script src="js/filter.js">
+ </script>
 </html>
