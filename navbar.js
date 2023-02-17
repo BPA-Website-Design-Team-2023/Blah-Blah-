@@ -8,3 +8,13 @@ function goUp(){
     document.getElementById("after").style.display = "none";
     document.getElementById("container").style.display = "none";
 }
+
+
+
+//Contact Us
+
+function popDown(){
+    document.getElementById("contact").style.display = "none";
+    document.getElementById("opacity").style.display = "none";
+    
+}
