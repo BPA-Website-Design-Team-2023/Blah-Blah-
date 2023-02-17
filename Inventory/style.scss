@@ -94,6 +94,9 @@ hr{
             font-size: 1.5rem;
             color: $white;
         }
+        .active{
+            color: $pink;
+        }
         i:hover{
             cursor: pointer;
             color: $pink;
@@ -147,8 +150,12 @@ hr{
             color: $white;
             padding-left: 1rem;
         }
+        .active{
+            color: $pink;
+        }
         a:hover{
             color: $pink;
+            cursor: pointer;
         }
     }
     display: none;
