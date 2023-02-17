@@ -16,5 +16,12 @@ function goUp(){
 function popDown(){
     document.getElementById("contact").style.display = "none";
     document.getElementById("opacity").style.display = "none";
+    document.querySelector("*").style.overflowY = "scroll"
+    
+}
+function popUp(){
+    document.getElementById("contact").style.display = "block";
+    document.getElementById("opacity").style.display = "block";
+    document.querySelector("*").style.overflowY = "hidden"
     
 }

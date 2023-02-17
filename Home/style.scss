@@ -171,6 +171,78 @@ button:hover{
       }
     display: none;
 }
+//CONTACT US
+#contact{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: $black;
+  display: none;
+  iframe{
+      position: relative;
+      pointer-events: none;
+      opacity: 0.5;
+  }
+  form{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top:0%;
+      padding-top: 1rem;
+      left: 50%;
+      transform: translate(-45%,0%);
+      p{
+          padding-bottom: 3rem;
+          color: $gray;
+      }
+      h1{
+          color: $white;
+      }
+      #input{
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          input{
+              padding-top: 1rem;
+              background: none;
+              border-style: none;
+              border-bottom: 1px solid $white;
+              padding-top: 3rem;
+              color: $white;
+          }
+          input::placeholder{
+              color: $white;
+          }
+          input:focus{
+              outline: none;
+          }
+      }
+      #send{
+          margin-top: 3rem;
+          position: absolute;
+          border: none;
+          background-image: $normal-background-color;
+          color: $white;
+          padding: 1rem;
+          border-radius: 5px;
+          font-size: 10px;
+          i{
+              color: $white;
+              font-size: 10px;
+          }
+      }
+  }
+  i{
+      font-size: 1.5rem;
+      color: $black;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+  }
+  i:hover{
+      cursor: pointer;
+  }
+}
 
 #first{
   position: relative;
@@ -427,6 +499,54 @@ button:hover{
   }
   #header-laptop{
       display: block;
+  }
+
+  //CONTACT
+  #opacity{
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    position: fixed;
+    opacity: 0.5;
+    z-index: 8;
+    display: none;
+}
+  #contact{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      height: 90%;
+      border-radius: 5px;
+      iframe{
+          pointer-events: visible;
+          opacity: 1;
+          height: 300px;
+      }
+      form{
+          border-radius: 5px;
+          padding-left: 2rem;
+          width: 300px !important;
+          height: 500px;
+          background-color: $white;
+          position: absolute;
+          left: 75%;
+          
+          h1{
+              display: none;
+          }
+          #input{
+              padding-top: 0 !important;
+          }
+          input{
+              color: $black !important;
+              border-bottom: 1px solid $black !important;
+          }
+          input::placeholder{
+              color: $black !important;
+          }
+      }
   }
 
   #first{

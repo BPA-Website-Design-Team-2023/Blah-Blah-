@@ -2,12 +2,10 @@
   font-family: Montserrate;
   src: url(../Fonts-family/Montserrat/static/Montserrat-Regular.ttf);
 }
-
 @font-face {
   font-family: League Spartant;
   src: url(../Fonts-family/League_Spartan/static/LeagueSpartan-SemiBold.ttf);
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -50,66 +48,45 @@ hr {
   background-color: #000;
   z-index: 5;
 }
-
 #header-mobile #top {
   width: 100%;
   height: 4rem;
   background-color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 #header-mobile #top #after {
   display: none;
 }
-
 #header-mobile #top i {
   position: absolute;
   right: 2rem;
   font-size: 1.5rem;
-  color: #ffff;
+  color: white;
 }
-
 #header-mobile #top i:hover {
   cursor: pointer;
   color: #D33BAC;
 }
-
 #header-mobile #top img {
   height: 2.5rem;
   padding-left: 2rem;
 }
-
 #header-mobile #container {
   display: none;
 }
-
 #header-mobile #container #bottom {
   font-size: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 2rem;
 }
-
 #header-mobile #container #bottom a {
   text-decoration: none;
-  color: #ffff;
+  color: white;
   padding: 0 0 2rem 0;
 }
-
 #header-mobile #container #bottom a:hover {
   color: #D33BAC;
 }
@@ -120,44 +97,105 @@ hr {
   background-color: #000;
   z-index: 5;
   height: 6rem !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   display: none;
 }
-
 #header-laptop #top {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 #header-laptop img {
   height: 4.5rem;
   padding-left: 2rem;
 }
-
 #header-laptop #nav {
   position: absolute;
   right: 2rem;
 }
-
 #header-laptop #nav a {
   text-decoration: none;
-  color: #ffff;
+  color: white;
   padding-left: 1rem;
 }
-
 #header-laptop #nav a:hover {
   color: #D33BAC;
+}
+
+#contact {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #000;
+  display: none;
+}
+#contact iframe {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5;
+}
+#contact form {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0%;
+  padding-top: 1rem;
+  left: 50%;
+  transform: translate(-45%, 0%);
+}
+#contact form p {
+  padding-bottom: 3rem;
+  color: gray;
+}
+#contact form h1 {
+  color: white;
+}
+#contact form #input {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+#contact form #input input {
+  padding-top: 1rem;
+  background: none;
+  border-style: none;
+  border-bottom: 1px solid white;
+  padding-top: 3rem;
+  color: white;
+}
+#contact form #input input::-moz-placeholder {
+  color: white;
+}
+#contact form #input input::placeholder {
+  color: white;
+}
+#contact form #input input:focus {
+  outline: none;
+}
+#contact form #send {
+  margin-top: 3rem;
+  position: absolute;
+  border: none;
+  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 10px;
+}
+#contact form #send i {
+  color: white;
+  font-size: 10px;
+}
+#contact i {
+  font-size: 1.5rem;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+#contact i:hover {
+  cursor: pointer;
 }
 
 iframe {
@@ -169,161 +207,100 @@ iframe {
 }
 
 #container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 5rem 0;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-
 #container #left {
-  background-color: #ffff;
+  background-color: white;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 2rem;
 }
-
 #container #left p {
   margin-bottom: 3rem;
 }
-
 #container #left div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #container #left div input {
   border: 0.5px solid gray;
   height: 3rem;
   border-radius: 5px;
   padding-left: 5px;
 }
-
 #container #right {
   border-radius: 5px;
   margin-top: 2rem;
 }
-
 #container #right #top {
-  background-color: #ffff;
+  background-color: white;
   border-radius: 5px;
   padding: 2rem;
 }
-
 #container #right #top #payment {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#D33BAC), to(#731AC3));
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
   padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
   margin-bottom: 2rem;
 }
-
 #container #right #top #payment h4 {
-  color: #ffff;
+  color: white;
 }
-
 #container #right #top #payment #monthly {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  color: #ffff;
+  flex-direction: row;
+  align-items: baseline;
+  color: white;
 }
-
 #container #right #top #payment #price {
   margin-top: 1rem;
-  color: #ffff;
+  color: white;
   font-size: 4rem;
   font-family: League Spartant;
 }
-
 #container #right #top #payment #apr {
-  color: #ffff;
+  color: white;
 }
-
 #container #right #top div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 #container #right #top hr {
   margin: 1rem 0;
   color: #731AC3 !important;
 }
-
 #container #right #bottom {
-  background-color: #ffff;
+  background-color: white;
   border-radius: 5px;
   margin-top: 2rem;
   padding: 2rem;
 }
-
 #container #right #bottom p {
   margin: 1rem 0;
 }
-
 #container #right #bottom button {
   background-color: #731AC3;
-  color: #ffff;
+  color: white;
   border-style: none;
   padding: 1rem;
   border-radius: 5px;
 }
-
 #container #right #bottom button:hover {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#731AC3), to(#D33BAC));
   background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
   cursor: pointer;
 }
@@ -333,15 +310,13 @@ iframe {
   padding-bottom: 50px;
   padding-left: 10%;
   float: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 .footer p {
   font-size: 20px;
   padding-bottom: 20px;
-  color: #ffff;
+  color: white;
 }
-
 .footer a {
   color: #848687;
   text-decoration: none;
@@ -350,12 +325,8 @@ iframe {
 
 @media only screen and (min-width: 400px) {
   #container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #container #left {
     width: 22rem;
@@ -364,7 +335,6 @@ iframe {
     width: 26rem;
   }
 }
-
 @media only screen and (min-width: 850px) {
   h1 {
     font-size: 3rem !important;
@@ -378,17 +348,17 @@ iframe {
   #opacity {
     width: 100%;
     height: 100%;
-    background-color: #ffff;
+    background-color: white;
     position: fixed;
     opacity: 0.5;
     z-index: 8;
+    display: none;
   }
   #contact {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
     border-radius: 5px;
@@ -403,7 +373,7 @@ iframe {
     padding-left: 2rem;
     width: 300px !important;
     height: 500px;
-    background-color: #ffff;
+    background-color: white;
     position: absolute;
     left: 75%;
   }
@@ -417,23 +387,14 @@ iframe {
     color: #000 !important;
     border-bottom: 1px solid #000 !important;
   }
-  #contact form input::-webkit-input-placeholder {
-    color: #000 !important;
-  }
-  #contact form input:-ms-input-placeholder {
-    color: #000 !important;
-  }
-  #contact form input::-ms-input-placeholder {
+  #contact form input::-moz-placeholder {
     color: #000 !important;
   }
   #contact form input::placeholder {
     color: #000 !important;
   }
   #container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   #container #left {
     margin-right: 1rem;
@@ -442,7 +403,6 @@ iframe {
     margin-top: 1rem !important;
   }
 }
-
 @media only screen and (min-width: 1400px) {
   * {
     overflow-y: hidden;
@@ -450,5 +410,4 @@ iframe {
   iframe {
     display: block;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
