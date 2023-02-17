@@ -32,8 +32,8 @@ $normal-font-line-height:1.5;
 
 
 body{
-    background-color: $black;
     overflow-y: hidden;
+    background-color: $black;
 }
 h1{
     font-family: League Spartant;
@@ -135,6 +135,116 @@ hr{
     }
     display: none;
 }
+
+iframe{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+    display: none;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    #left{
+        background-color: $white;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        p{
+            margin-bottom: 3rem;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            align-items: center;
+            input{
+                border: .5px solid $gray;
+                height: 3rem;
+                border-radius: 5px;
+                padding-left: 5px;
+            }
+        }
+    }
+    #right{
+        border-radius: 5px;
+        margin-top: 2rem;
+    
+        #top{
+            background-color: $white;
+            border-radius: 5px;
+            padding: 2rem;
+            #payment{
+                background-image: $normal-background-color;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                margin-bottom: 2rem;
+                h4{
+                    color: $white;
+                }
+                #monthly{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    color: $white;
+                }
+                #price{
+                    margin-top: 1rem;
+                    color: $white;
+                    font-size: 4rem;
+                    font-family: League Spartant;
+                }
+                #apr{
+                    color: $white;
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            hr{
+                margin: 1rem 0;
+                color: $purple !important;
+            }
+        }
+        #bottom{
+            background-color: $white;
+            border-radius: 5px;
+            margin-top: 2rem;
+            padding: 2rem;
+            p{
+                margin: 1rem 0;
+            }
+            button{
+                background-color: #731AC3;
+                color: $white;
+                border-style: none;
+                padding: 1rem;
+                border-radius: 5px;
+            }
+            button:hover{
+                background-image: $reverse-background-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
 .footer{
     #socials{
       padding-top: 50px;
@@ -155,31 +265,101 @@ hr{
     }
   }
 
-@media only screen and (min-width: 1000px){
-    #header-mobile{
-        display:none;
-    }
-    #header-laptop{
-        display: block;
-    }
-    #filter{
-        #list{
-            width: 12.5% !important;
+  @media only screen and (min-width: 400px){
+    #container{
+        justify-content: center;
+        align-items: center;
+        #left{
+            width: 22rem;
         }
-        .fourth{
-            display: inline-flex !important;
-        }
-        #menu{
-            display: none !important;
-        }
-    }
-    #inventory{
-        #box{
-            width: 32%;
+        #right{
+            width: 26rem;
         }
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (min-width: 600px) {
+    
+}
 
+@media only screen and (min-width: 850px) {
+  h1{
+    font-size: 3rem !important;
+  }
+  #header-mobile{
+    display:none;
+  }
+  #header-laptop{
+      display: block;
+  }
+
+    //CONTACT FORM
+    #opacity{
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        position: fixed;
+        opacity: 0.5;
+        z-index: 8;
+    }
+    #contact{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90%;
+        border-radius: 5px;
+        iframe{
+            pointer-events: visible;
+            opacity: 1;
+            height: 300px;
+        }
+        form{
+            border-radius: 5px;
+            padding-left: 2rem;
+            width: 300px !important;
+            height: 500px;
+            background-color: $white;
+            position: absolute;
+            left: 75%;
+            
+            h1{
+                display: none;
+            }
+            #input{
+                padding-top: 0 !important;
+            }
+            input{
+                color: $black !important;
+                border-bottom: 1px solid $black !important;
+            }
+            input::placeholder{
+                color: $black !important;
+            }
+        }
+    }
+
+    #container{
+        flex-direction: row;
+        #left{
+            margin-right: 1rem;
+        }
+        #right{
+            #bottom{
+                margin-top: 1rem !important;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1400px){
+
+    *{
+        overflow-y: hidden;
+    }
+    iframe{
+        display: block;
+    }
 }
