@@ -1,0 +1,39 @@
+{
+    "car_count": 21,
+    "years": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2019,
+        2020
+    ],
+    "miles": [
+        19501,
+        108942
+    ],
+    "price": [
+        11990,
+        24990
+    ],
+    "manufacturers": [
+        "Cadillac",
+        "Mazda",
+        "Mercedes-Benz",
+        "Chevrolet",
+        "Lincoln",
+        "Nissan",
+        "Dodge",
+        "Buick",
+        "Saturn",
+        "BMW",
+        "Jeep",
+        "Ford",
+        "Jaguar"
+    ]
+}

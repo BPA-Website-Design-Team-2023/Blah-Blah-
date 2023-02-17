@@ -1,0 +1,214 @@
+{
+    "cars": [
+        [
+            "2014 Mercedes-Benz C-Class",
+            "https://vexgateway.fastly.carvana.io/2002085369/hero.jpg?",
+            17990,
+            "Est. $431/mo",
+            76808,
+            2014,
+            "Mercedes-Benz",
+            "C 300 4MATIC Luxury"
+        ],
+        [
+            "2020 Mazda CX-5",
+            "https://vexgateway.fastly.carvana.io/2001997982/hero.jpg?width=449",
+            23590,
+            "Est. $466/mo",
+            51839,
+            2020,
+            "Mazda",
+            "Touring"
+        ],
+        [
+            "2014 Cadillac ELR",
+            "https://vexgateway.fastly.carvana.io/2002138799/hero.jpg?width=449",
+            24990,
+            "Est. $494/mo",
+            56500,
+            2014,
+            "Cadillac",
+            "base"
+        ],
+        [
+            "2017 Dodge Journey",
+            "https://vexgateway.fastly.carvana.io/2002033011/hero.jpg?width=449",
+            16590,
+            "Est. $413/mo",
+            87543,
+            2017,
+            "Dodge",
+            "Crossroad Plus"
+        ],
+        [
+            "2016 Ford Edge",
+            "https://vexgateway.fastly.carvana.io/2002022441/hero.jpg?width=449",
+            18990,
+            "Est. $387/mo",
+            70853,
+            2016,
+            "Ford",
+            "SEL"
+        ],
+        [
+            "2011 Lincoln Town Car",
+            "https://vexgateway.fastly.carvana.io/2001915946/hero.jpg?width=449",
+            19590,
+            "Est. $506/mo",
+            45032,
+            2011,
+            "Lincoln",
+            "Signature Limited"
+        ],
+        [
+            "2015 Nissan Versa",
+            "https://vexgateway.fastly.carvana.io/2002145821/hero.jpg?width=449",
+            13590,
+            "Est. $336/mo",
+            54216,
+            2015,
+            "Nissan",
+            "S Plus"
+        ],
+        [
+            "2014 Dodge Charger",
+            "https://vexgateway.fastly.carvana.io/2002177921/hero.jpg?width=449",
+            15990,
+            "Est. $399/mo",
+            108942,
+            2014,
+            "Dodge",
+            "SXT"
+        ],
+        [
+            "2010 Nissan Versa",
+            "https://vexgateway.fastly.carvana.io/2002174677/hero.jpg?width=449",
+            11990,
+            "Est. $296/mo",
+            49884,
+            2010,
+            "Nissan",
+            "S"
+        ],
+        [
+            "2016 Jeep Renegade",
+            "https://vexgateway.fastly.carvana.io/2002144035/hero.jpg?width=449",
+            20990,
+            "Est. $414/mo",
+            37367,
+            2016,
+            "Jeep",
+            "75th Anniversary"
+        ],
+        [
+            "2011 Mercedes-Benz SLK-Class",
+            "https://vexgateway.fastly.carvana.io/2002140410/hero.jpg?width=449",
+            23990,
+            "Est. $597/mo",
+            20836,
+            2011,
+            "Mercedes-Benz",
+            "SLK 300"
+        ],
+        [
+            "2019 Buick Regal Sportback",
+            "https://vexgateway.fastly.carvana.io/2002156988/hero.jpg?width=449",
+            22990,
+            "Est. $472/mo",
+            44961,
+            2019,
+            "Buick",
+            "Preferred II"
+        ],
+        [
+            "2016 Jaguar XF",
+            "https://vexgateway.fastly.carvana.io/2002057774/hero.jpg?width=449",
+            24990,
+            "Est. $512/mo",
+            50114,
+            2016,
+            "Jaguar",
+            "XF 3.5t Prestige"
+        ],
+        [
+            "2019 Buick Cascada",
+            "https://vexgateway.fastly.carvana.io/2001976448/hero.jpg?width=449",
+            23590,
+            "Est. $484/mo",
+            47328,
+            2019,
+            "Buick",
+            "Premium"
+        ],
+        [
+            "2016 Jaguar XF",
+            "https://vexgateway.fastly.carvana.io/2001989781/hero.jpg?width=449",
+            23590,
+            "Est. $499/mo",
+            65604,
+            2016,
+            "Jaguar",
+            "XF 3.5 Prestige"
+        ],
+        [
+            "2013 Mercedes-Benz SLK-Class",
+            "https://vexgateway.fastly.carvana.io/2002069983/hero.jpg?width=449",
+            22590,
+            "Est. $478/mo",
+            61715,
+            2013,
+            "Mercedes-Benz",
+            "SLK 250"
+        ],
+        [
+            "2017 Jaguar XE",
+            "https://vexgateway.fastly.carvana.io/2002164073/hero.jpg?width=449",
+            24990,
+            "Est. $524/mo",
+            26164,
+            2017,
+            "Jaguar",
+            "XE 25t Premium"
+        ],
+        [
+            "2015 BMW 5 Series",
+            "https://vexgateway.fastly.carvana.io/2002086748/hero.jpg?width=449",
+            23990,
+            "Est. $600/mo",
+            67146,
+            2015,
+            "BMW",
+            "535i"
+        ],
+        [
+            "2012 Mercedes-Benz E-Class",
+            "https://vexgateway.fastly.carvana.io/2002093317/hero.jpg?width=449",
+            17590,
+            "Est. $450/mo",
+            79545,
+            2012,
+            "Mercedes-Benz",
+            "E 350"
+        ],
+        [
+            "2009 Saturn Sky",
+            "https://vexgateway.fastly.carvana.io/2002066168/hero.jpg?width=449",
+            17590,
+            "Est. $421/mo",
+            19501,
+            2009,
+            "Saturn",
+            "base"
+        ],
+        [
+            "2010 Chevrolet Camaro",
+            "https://vexgateway.fastly.carvana.io/2002217719/hero.jpg?width=449",
+            23990,
+            "Est. $578/mo",
+            78451,
+            2010,
+            "Chevrolet",
+            "SS"
+        ]
+    ]
+}
