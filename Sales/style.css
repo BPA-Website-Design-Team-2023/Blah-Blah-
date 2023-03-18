@@ -160,24 +160,64 @@ hr {
   color: #D33BAC;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer #address {
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer #address #text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+}
+
+.footer #address #text li {
+  padding-top: 1rem;
+}
+
 .footer #socials {
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 10%;
-  float: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Montserrat', sans-serif;
 }
 
-.footer p {
-  font-size: 20px;
+.footer h2 {
   padding-bottom: 20px;
   color: #ffff;
 }
 
 .footer a {
-  color: #848687;
+  color: #ffff;
   text-decoration: none;
-  font-size: 18.3px;
+  padding-right: 1rem;
+  font-size: 3rem;
+}
+
+.footer a:hover {
+  color: #731AC3;
+}
+
+.footer > div {
+  width: 400px;
+  margin: 10px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1000px) {

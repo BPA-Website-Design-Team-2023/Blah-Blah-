@@ -136,24 +136,47 @@ hr{
     display: none;
 }
 .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    #address{
+      width: 50%;
+      justify-content: center;
+      #text{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: 'Montserrat', sans-serif;
+        color: $white;
+        li{
+          padding-top: 1rem;
+        }
+    }
+    }
     #socials{
-      padding-top: 50px;
-      padding-bottom: 50px;
-      padding-left: 10%;
-      float: left;
-      font-family: 'Montserrat', sans-serif;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+      }
+      h2{
+        padding-bottom: 20px;
+        color: $white;
+      }
+      a{
+        color: $white;
+        text-decoration: none;
+        padding-right: 1rem;
+        font-size: 3rem;
+      }
+      a:hover{
+        color: $purple;
+      }
     }
-    p{
-      font-size: 20px;
-      padding-bottom: 20px;
-      color: $white;
+    .footer > div{
+      width: 400px;
+      margin: 10px;
+      text-align: center;
     }
-    a{
-      color: #848687;
-      text-decoration: none;
-      font-size: 18.3px;
-    }
-  }
 
 @media only screen and (min-width: 1000px){
     #header-mobile{

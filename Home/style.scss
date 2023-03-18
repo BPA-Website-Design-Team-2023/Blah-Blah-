@@ -69,25 +69,65 @@ button:hover{
   cursor: pointer;
 }
 .footer{
-    #socials{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  #address{
+    width: 50%;
+    justify-content: center;
+    #text{
       padding-top: 50px;
       padding-bottom: 50px;
-      padding-left: 10%;
-      float: left;
+      font-family: 'Montserrat', sans-serif;
+      color: $white;
+      li{
+        padding-top: 1rem;
+      }
+  }
+  }
+  #socials{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      justify-content: center;
       font-family: 'Montserrat', sans-serif;
     }
-    p{
-      font-size: 20px;
+    h2{
       padding-bottom: 20px;
       color: $white;
     }
     a{
-      color: #848687;
+      color: $white;
       text-decoration: none;
-      font-size: 18.3px;
+      padding-right: 1rem;
+      font-size: 3rem;
+    }
+    a:hover{
+      color: $purple;
     }
   }
-
+  .footer > div{
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+  }
+  .footer2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    #address{
+      width: 50%;
+      justify-content: center;
+      #text{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: 'Montserrat', sans-serif;
+        color: $white;
+        li{
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
 #header-mobile{
     width: 100%;
     position: fixed;
