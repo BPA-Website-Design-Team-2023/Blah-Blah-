@@ -229,7 +229,7 @@ button:hover {
   width: 100%;
   position: fixed;
   z-index: 5;
-  height: 4rem;
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,7 +252,7 @@ button:hover {
 }
 
 #header-laptop img {
-  height: 3.5rem;
+  height: 4.5rem;
 }
 
 #header-laptop .active {

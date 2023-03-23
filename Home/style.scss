@@ -184,7 +184,7 @@ button:hover{
     width: 100%;
     position: fixed;
     z-index: 5;
-    height: 4rem;
+    height: 6rem;
     display: flex;
     overflow-y: hidden;
 
@@ -196,7 +196,7 @@ button:hover{
       background-color: $black;
     }
     img{
-        height: 3.5rem;
+        height: 4.5rem;
     }
     .active{
       color: $pink;
