@@ -321,7 +321,6 @@ iframe{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 1000px;
     #address{
       width: 50%;
       justify-content: center;
@@ -329,7 +328,7 @@ iframe{
         padding-top: 50px;
         padding-bottom: 50px;
         font-family: 'Montserrat', sans-serif;
-        color: $white;
+        color: $gray;
         li{
           padding-top: 1rem;
         }
@@ -343,10 +342,10 @@ iframe{
       }
       h2{
         padding-bottom: 20px;
-        color: $white;
+        color: $gray;
       }
       a{
-        color: $white;
+        color: $gray;
         text-decoration: none;
         padding-right: 1rem;
         font-size: 3rem;
@@ -371,7 +370,7 @@ iframe{
             padding-top: 50px;
             padding-bottom: 50px;
             font-family: 'Montserrat', sans-serif;
-            color: $white;
+            color: $gray;
             li{
               padding-top: 1rem;
             }

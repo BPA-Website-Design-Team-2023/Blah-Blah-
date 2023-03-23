@@ -86,7 +86,7 @@ button:hover {
   padding-top: 50px;
   padding-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
-  color: #ffff;
+  color: gray;
 }
 
 .footer #address #text li {
@@ -104,11 +104,11 @@ button:hover {
 
 .footer h2 {
   padding-bottom: 20px;
-  color: #ffff;
+  color: gray;
 }
 
 .footer a {
-  color: #ffff;
+  color: gray;
   text-decoration: none;
   padding-right: 1rem;
   font-size: 3rem;
@@ -144,7 +144,7 @@ button:hover {
   padding-top: 50px;
   padding-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
-  color: #ffff;
+  color: gray;
 }
 
 .footer2 #address #text li {
@@ -248,6 +248,7 @@ button:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 5px;
+  background-color: #000;
 }
 
 #header-laptop img {

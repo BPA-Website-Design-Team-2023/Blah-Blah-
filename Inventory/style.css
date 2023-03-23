@@ -66,7 +66,7 @@ hr {
   padding-top: 50px;
   padding-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
-  color: #ffff;
+  color: gray;
 }
 
 .footer #address #text li {
@@ -84,11 +84,11 @@ hr {
 
 .footer h2 {
   padding-bottom: 20px;
-  color: #ffff;
+  color: gray;
 }
 
 .footer a {
-  color: #ffff;
+  color: gray;
   text-decoration: none;
   padding-right: 1rem;
   font-size: 3rem;
@@ -124,7 +124,7 @@ hr {
   padding-top: 50px;
   padding-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
-  color: #ffff;
+  color: gray;
 }
 
 .footer2 #address #text li {
