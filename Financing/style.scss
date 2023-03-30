@@ -34,6 +34,16 @@ $normal-font-line-height:1.5;
 body{
     overflow-y: hidden;
     background-color: $black;
+
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        /* Preserve aspet ratio */
+        min-width: 100%;
+        min-height: 100%;
+    }
 }
 h1{
     font-family: League Spartant;
@@ -244,6 +254,13 @@ iframe{
                 height: 3rem;
                 border-radius: 5px;
                 padding-left: 5px;
+            }
+            select{
+                border: .5px solid $gray;
+                height: 3rem;
+                border-radius: 5px;
+                padding-left: 5px;
+                width: 44%;
             }
         }
     }

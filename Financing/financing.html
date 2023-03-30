@@ -95,65 +95,78 @@
        </div>
       </div>
 
-    <iframe src="https://www.youtube.com/embed/_T8jKHR4nlw?controls=0&amp;start=15&autoplay=1&mute=1&loop=1&control=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
+    <video autoplay muted loop id="bgvid">
+      <source src="car.mp4" type="video/mp4">
+    </video>
+
     <div id="container">
         <div id="left">
             <h1>Car Payment Calculator</h1>
             <p>Find out how much you need to budget for the car you love.</p>
             <div>
                 <h3>Vehicle Price</h3>
-                <input id="vPrice" type="text">
+                <input id="vehicle-price" type="number" onkeyup="changePrice();" value="20000">
             </div>
             <div>
                 <h3>Down Payment</h3>
-                <input id="downP" type="text">
+                <input id="down-p" type="number" onkeyup="changeDown();" value="1000">
             </div>
             <div>
                 <h3>Trade-In Value</h3>
-                <input  type="text">
+                <input id="trade-in" type="number" onkeyup="changeTrade();" value="0">
             </div>
             <div>
                 <h3>Credit Score</h3>
-                <input type="text">
+                <select name="credit" id="credit-score" onchange="changeCredit();">
+                    <option value="excellent">Excellent (720-850)</option>
+                    <option value="good">Good (660-719)</option>
+                    <option value="average">Average (600-659)</option>
+                    <option value="below">Below Average (300-599)</option>
+                </select>
             </div>
             <div>
                 <h3>Loan Term</h3>
-                <input type="text" name="" id="">
+                <select name="loan" id="loan-term" onchange="changeLoan();">
+                    <option value="72">72 Months</option>
+                    <option value="60">60 Months</option>
+                    <option value="48">48 Months</option>
+                    <option value="36">36 Months</option>
+                </select>
             </div>
         </div>
         <div id="right">
             <div id="top">
                 <div id="payment">
                     <h4>Your Monthly Payment</h4>
-                    <div id="monthly"><div id="price">$234</div>/mo</div>
-                    <p id="apr">$23423 fgfdsfsd</p>
+                    <div id="monthly"><div id="price">$0</div>/mo</div>
+                    <p id="apr">0% APR</p>
                 </div>
                 <div>
                     <p>Vehicle Budget</p>
-                    <p id="vBudget">dfgd</p>
+                    <p id="vBudget">$0</p>
                 </div>
                 <div>
                     <p>Down Payment</p>
-                    <p id="dPayment"></p>
+                    <p id="dPayment">$0</p>
                 </div>
                 <div>
                     <p>Trade-in Value</p>
-                    <p id="tIValue"></p>
+                    <p id="tIValue">$0</p>
                 </div>
                 <div>
                     <p>Est. Tax, Title & Registration</p>
-                    <p id="tax"></p>
+                    <p id="tax">$0</p>
                 </div>
                 <hr>
                 <div>
                     <p>Total Amount</p>
-                    <p id="tAmount"></p>
+                    <p id="tAmount">$0</p>
                 </div>
             </div>
             <div id="bottom">
                 <h3>Ready to get your first car?</h3>
                 <p>Book an in-person appointment for up to 5 days business wait.</p>
-                <button>Book Appointment</button>
+                <button onclick="popUp()">Book Appointment</button>
             </div>
         </div>
     </div>
@@ -179,4 +192,5 @@
   </div>
 </body>
 <script src="../navbar.js"></script>
+<script src="calculator.js"></script>
 </html>
