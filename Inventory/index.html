@@ -113,7 +113,7 @@
       </i>
      </button>
      <div class="dropdown-menu" id="price-down">
-      <ul>
+      <ul class="item">
        <li>
         <button class="dropdown-item" onclick="filter_price(0, 15000)">
          &lt; $15,000
@@ -139,7 +139,7 @@
       </i>
      </button>
      <div class="dropdown-menu" id="miles-down">
-      <ul>
+      <ul class="item">
        <li>
         <button class="dropdown-item" onclick="filter_miles(0, 25000)">
          &lt; 25,000
@@ -165,7 +165,7 @@
       </i>
      </button>
      <div class="dropdown-menu" id="year-down">
-      <ul>
+      <ul class="item">
        <li>
         <button class="dropdown-item" onclick="filter_year(2009)">
          2009
@@ -231,7 +231,7 @@
       </i>
      </button>
      <div class="dropdown-menu" id="manufacturer-down">
-      <ul>
+      <ul class="item">
        <li>
         <button class="dropdown-item" onclick="filter_manufacturer('Cadillac')">
          Cadillac
@@ -299,9 +299,7 @@
        </li>
       </ul>
      </div>
-     <div id="menu">
-      <i class="fa-solid fa-ellipsis-vertical">
-      </i>
+
      </div>
     </ul>
    </div>
@@ -309,17 +307,13 @@
     <!--    Cars will be inserted here by the javascript running on the users computer extracting cars from car_list.json-->
     <div id="skip">
      <div id="left">
-      <button disabled="" onclick="backward()" style="margin-left: 5px;">
-       &lt; BACK
-      </button>
+      <button disabled="" onclick="backward()" style="margin-left: 5px;">BACK</button>
      </div>
      <p id="page-count">
       Page 1 of 1
      </p>
      <div id="right">
-      <button onclick="forward()" style="margin-right: 5px;">
-       NEXT &gt;
-      </button>
+      <button onclick="forward()" style="margin-right: 5px;">NEXT</button>
      </div>
     </div>
    </div>

@@ -333,6 +333,7 @@ hr{
             display: flex;
             height: 3rem;
             border-radius: 25px;
+            border-style: none;
             align-items: center;
             padding: 0 1rem;
             cursor: pointer;
@@ -343,34 +344,58 @@ hr{
         }
         .dropdown-menu {
             display: none;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            overflow: auto;
-            height: 6rem;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            padding: 5px;
+            position: absolute;
+            background-color: $white;
+            z-index: 3;
+            box-shadow: 5px 5px 100px $black;
             border-radius: 5px;
+            width: 20rem;
+            top: 17rem;
             button {
-                color: black;
-                padding: 12px 16px;
+                padding: 1rem;
                 text-decoration: none;
                 display: block;
-                border-color: #f1f1f1;
                 box-shadow: none;
+                border-style: none;
+                background-color: $white;
             }
+        }
+        .item > li{
+            width: 20rem;
+            border-bottom: 1px solid lightgray;
+            padding: .5rem;
+            button{
+                font-family: Montserrate;
+                //font-weight: 900;
+                font-size: 16px;
+                padding: 1rem;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+        .item > li:hover{
+            cursor: pointer;
+            button{
+                color: $purple;
+                cursor: pointer;
+                font-size: 17px;
+            }
+        }
+        #price-down{
+            left: 10%;
+        }
+        #miles-down{
+            left: 20%;
+        }
+        #year-down{
+            right: 20%;
+        }
+        #manufacturer-down{
+            right: 5%;
         }
         .show {
             display: flex;
-        }
-        #menu{
-            background-image: $normal-background-color;
-            color:$white;
-            font-size: 1.5rem;
-            padding: .7rem;
-            border-radius: 25px;
-            display: flex;
-            justify-content: center;
         }
     }
 
@@ -478,7 +503,6 @@ hr{
         }
         
     }
-
     #filter{
         .list{
             width: 25% !important;
@@ -555,7 +579,7 @@ hr{
     }
     #filter{
         .list{
-            width: 15% !important;
+            width: 20% !important;
         }
         .fourth{
             display: inline-flex !important;
