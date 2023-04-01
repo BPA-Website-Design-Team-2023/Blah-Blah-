@@ -2,12 +2,10 @@
   font-family: Montserrate;
   src: url(../Fonts-family/Montserrat/static/Montserrat-Regular.ttf);
 }
-
 @font-face {
   font-family: League Spartant;
   src: url(../Fonts-family/League_Spartan/static/LeagueSpartan-SemiBold.ttf);
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -24,11 +22,11 @@ body {
 h1 {
   font-family: League Spartant;
   font-size: 2rem;
-  color: #ffff;
+  color: white;
 }
 
 p {
-  color: #ffff;
+  color: white;
   font-size: 13px;
   font-family: Montserrate;
 }
@@ -46,74 +44,56 @@ hr {
 }
 
 div {
-  color: #ffff;
+  color: white;
 }
 
 button {
-  color: #ffff;
+  color: white;
   padding: 1rem;
   border-style: none;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#D33BAC), to(#731AC3));
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
   border-radius: 50px;
 }
 
 button:hover {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#731AC3), to(#D33BAC));
   background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
   cursor: pointer;
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .footer #address {
   width: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .footer #address #text {
   padding-top: 50px;
   padding-bottom: 50px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: gray;
 }
-
 .footer #address #text li {
   padding-top: 1rem;
 }
-
 .footer #socials {
   padding-top: 50px;
   padding-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
-
 .footer h2 {
   padding-bottom: 20px;
   color: gray;
 }
-
 .footer a {
   color: gray;
   text-decoration: none;
   padding-right: 1rem;
   font-size: 3rem;
 }
-
 .footer a:hover {
   color: #731AC3;
 }
@@ -125,28 +105,20 @@ button:hover {
 }
 
 .footer2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: 10%;
 }
-
 .footer2 #address {
   width: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .footer2 #address #text {
   padding-top: 50px;
   padding-bottom: 50px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: gray;
 }
-
 .footer2 #address #text li {
   padding-top: 1rem;
 }
@@ -157,70 +129,48 @@ button:hover {
   background-color: #000;
   z-index: 5;
 }
-
 #header-mobile #top {
   width: 100%;
   height: 4rem;
   background-color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 #header-mobile #top #after {
   display: none;
 }
-
 #header-mobile #top i {
   position: absolute;
   right: 2rem;
   font-size: 1.5rem;
-  color: #ffff;
+  color: white;
 }
-
 #header-mobile #top .active {
   color: #D33BAC;
 }
-
 #header-mobile #top i:hover {
   cursor: pointer;
   color: #D33BAC;
 }
-
 #header-mobile #top img {
   height: 2.5rem;
   padding-left: 2rem;
 }
-
 #header-mobile #container {
   display: none;
 }
-
 #header-mobile #container #bottom {
   font-size: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 2rem;
 }
-
 #header-mobile #container #bottom a {
   text-decoration: none;
-  color: #ffff;
+  color: white;
   padding: 0 0 2rem 0;
 }
-
 #header-mobile #container #bottom a:hover {
   color: #D33BAC;
 }
@@ -230,41 +180,28 @@ button:hover {
   position: fixed;
   z-index: 5;
   height: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow-y: hidden;
   display: none;
 }
-
 #header-laptop #top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding-top: 5px;
   background-color: #000;
 }
-
 #header-laptop img {
   height: 4.5rem;
 }
-
 #header-laptop .active {
   color: #D33BAC;
 }
-
 #header-laptop a {
   text-decoration: none;
-  color: #ffff;
+  color: white;
   margin-left: 3rem;
 }
-
 #header-laptop a:hover {
   color: #D33BAC;
   cursor: pointer;
@@ -277,13 +214,11 @@ button:hover {
   background-color: #000;
   display: none;
 }
-
 #contact iframe {
   position: relative;
   pointer-events: none;
   opacity: 0.5;
 }
-
 #contact form {
   position: absolute;
   width: 100%;
@@ -291,76 +226,51 @@ button:hover {
   top: 0%;
   padding-top: 1rem;
   left: 50%;
-  -webkit-transform: translate(-45%, 0%);
-          transform: translate(-45%, 0%);
+  transform: translate(-45%, 0%);
 }
-
 #contact form p {
   padding-bottom: 3rem;
   color: gray;
 }
-
 #contact form h1 {
-  color: #ffff;
+  color: white;
 }
-
 #contact form #input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 90%;
 }
-
 #contact form #input input {
   padding-top: 1rem;
   background: none;
   border-style: none;
-  border-bottom: 1px solid #ffff;
+  border-bottom: 1px solid white;
   padding-top: 3rem;
-  color: #ffff;
+  color: white;
 }
-
-#contact form #input input::-webkit-input-placeholder {
-  color: #ffff;
+#contact form #input input::-moz-placeholder {
+  color: white;
 }
-
-#contact form #input input:-ms-input-placeholder {
-  color: #ffff;
-}
-
-#contact form #input input::-ms-input-placeholder {
-  color: #ffff;
-}
-
 #contact form #input input::placeholder {
-  color: #ffff;
+  color: white;
 }
-
 #contact form #input input:focus {
   outline: none;
 }
-
 #contact form #send {
   margin-top: 3rem;
   position: absolute;
   border: none;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#D33BAC), to(#731AC3));
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  color: #ffff;
+  color: white;
   padding: 1rem;
   border-radius: 5px;
   font-size: 10px;
 }
-
 #contact form #send i {
-  color: #ffff;
+  color: white;
   font-size: 10px;
 }
-
 #contact i {
   font-size: 1.5rem;
   color: #000;
@@ -368,7 +278,6 @@ button:hover {
   top: 1rem;
   right: 1rem;
 }
-
 #contact i:hover {
   cursor: pointer;
 }
@@ -379,40 +288,32 @@ button:hover {
   height: 100vh;
   overflow-y: hidden;
 }
-
 #first #car_animation {
   width: 100%;
   display: none;
 }
-
 #first #top_car {
   left: 90%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   width: 50%;
 }
-
 #first #intro {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
   width: 15rem;
   padding-left: 2rem;
 }
-
 #first #intro #used {
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   margin-bottom: 1rem;
   background-color: gray;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50px;
 }
-
 #first #intro #info {
   padding-bottom: 2rem;
 }
@@ -422,80 +323,55 @@ button:hover {
   overflow-y: hidden;
   height: 100vh;
 }
-
 #second img {
   width: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
-
 #second #right {
   width: 70%;
   position: absolute;
   top: 50%;
   right: 0;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
   padding-right: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: end;
+  flex-direction: column;
 }
-
 #second #right h1 {
   color: #D33BAC;
   text-align: end;
 }
-
 #second #right #search-bar {
   overflow-y: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
-  background-color: #ffff;
+  background-color: white;
   border-radius: 20px;
   margin: 1rem 0;
 }
-
 #second #right #search-bar #icon {
   font-size: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
   color: #000;
 }
-
 #second #right #search-bar input {
   height: 4rem;
   width: 100%;
   border-style: none;
   padding-right: 1rem;
 }
-
 #second #right #search-bar input:focus {
   outline: none;
 }
-
 #second #right #search-bar #go {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#D33BAC), to(#731AC3));
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  color: #ffff;
+  color: white;
   border-style: none;
   border-radius: 20px;
   width: 4rem;
@@ -503,51 +379,36 @@ button:hover {
   margin-right: 1rem;
   overflow-y: hidden;
 }
-
 #second #right #search-bar #go:hover {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#731AC3), to(#D33BAC));
   background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
   cursor: pointer;
 }
-
 #second #right #bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 #second #right #quatity, #second #right #quickly {
   text-align: end;
   width: 45%;
 }
-
 #second #right #quatity i, #second #right #quickly i {
   color: #731AC3;
   font-size: 2rem;
 }
-
 #second #right #quatity h4, #second #right #quickly h4 {
   font-family: League Spartant;
-  font-size: .8rem;
-  margin-top: .5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 #third {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#D33BAC), to(#731AC3));
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
   margin: 6rem 1rem !important;
   padding: 1rem;
   border-radius: 5px;
   position: relative;
 }
-
 #third #left {
   position: absolute;
   top: 0;
@@ -555,7 +416,6 @@ button:hover {
   font-size: 5rem;
   color: #731AC3;
 }
-
 #third #right {
   position: absolute;
   bottom: 0;
@@ -563,30 +423,17 @@ button:hover {
   font-size: 5rem;
   color: #D33BAC;
 }
-
 #third #container {
   background-color: #000;
   padding: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 #third #container #person {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-top: 1rem;
 }
-
 #third #container #person img {
   width: 3rem;
   height: 3rem;
@@ -597,75 +444,43 @@ button:hover {
 #fourth {
   position: relative;
   padding: 6rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
-
 #fourth #dissapear {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 #fourth #dissapear h1 {
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#D33BAC), to(#731AC3));
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
 }
-
 #fourth #dissapear p {
   text-align: center;
 }
-
 #fourth #appear {
   position: absolute;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
   display: none;
 }
-
 #fourth #appear #top, #fourth #appear #bottom {
   width: 100%;
 }
-
 #fourth #appear #top #person img, #fourth #appear #bottom #person img {
   width: 100%;
 }
-
 #fourth #appear #top #person #name, #fourth #appear #bottom #person #name {
   color: #731AC3;
 }
@@ -682,21 +497,14 @@ button:hover {
   }
   #fourth #appear #top, #fourth #appear #bottom {
     margin-bottom: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
   }
   #fourth #appear #top #person, #fourth #appear #bottom #person {
     width: 10rem;
   }
 }
-
 @media only screen and (min-width: 850px) {
   h1 {
     font-size: 3rem !important;
@@ -710,7 +518,7 @@ button:hover {
   #opacity {
     width: 100%;
     height: 100%;
-    background-color: #ffff;
+    background-color: white;
     position: fixed;
     opacity: 0.5;
     z-index: 8;
@@ -720,8 +528,7 @@ button:hover {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
     border-radius: 5px;
@@ -736,7 +543,7 @@ button:hover {
     padding-left: 2rem;
     width: 300px !important;
     height: 500px;
-    background-color: #ffff;
+    background-color: white;
     position: absolute;
     left: 75%;
   }
@@ -750,13 +557,7 @@ button:hover {
     color: #000 !important;
     border-bottom: 1px solid #000 !important;
   }
-  #contact form input::-webkit-input-placeholder {
-    color: #000 !important;
-  }
-  #contact form input:-ms-input-placeholder {
-    color: #000 !important;
-  }
-  #contact form input::-ms-input-placeholder {
+  #contact form input::-moz-placeholder {
     color: #000 !important;
   }
   #contact form input::placeholder {
@@ -782,16 +583,13 @@ button:hover {
     width: 30rem;
   }
   #fourth #appear {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin-top: 20rem;
   }
   #opacity {
     width: 100%;
     height: 100%;
-    background-color: #ffff;
+    background-color: white;
     position: fixed;
     opacity: 0.5;
     z-index: 8;
@@ -800,8 +598,7 @@ button:hover {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
     border-radius: 5px;
@@ -816,7 +613,7 @@ button:hover {
     padding-left: 2rem;
     width: 300px !important;
     height: 500px;
-    background-color: #ffff;
+    background-color: white;
     position: absolute;
     left: 75%;
   }
@@ -830,23 +627,15 @@ button:hover {
     color: #000 !important;
     border-bottom: 1px solid #000 !important;
   }
-  #contact form input::-webkit-input-placeholder {
-    color: #000 !important;
-  }
-  #contact form input:-ms-input-placeholder {
-    color: #000 !important;
-  }
-  #contact form input::-ms-input-placeholder {
+  #contact form input::-moz-placeholder {
     color: #000 !important;
   }
   #contact form input::placeholder {
     color: #000 !important;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   #inventory #box {
     width: 32%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -172,6 +172,9 @@ hr {
   padding-top: 3rem;
   color: white;
 }
+#contact form #input input::-moz-placeholder {
+  color: white;
+}
 #contact form #input input::placeholder {
   color: white;
 }
@@ -444,6 +447,9 @@ iframe {
     color: #000 !important;
     border-bottom: 1px solid #000 !important;
   }
+  #contact form input::-moz-placeholder {
+    color: #000 !important;
+  }
   #contact form input::placeholder {
     color: #000 !important;
   }
@@ -464,6 +470,4 @@ iframe {
   iframe {
     display: block;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
