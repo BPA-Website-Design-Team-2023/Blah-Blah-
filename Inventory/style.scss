@@ -264,7 +264,7 @@ hr{
     }
     i{
         font-size: 1.5rem;
-        color: $black;
+        color: $white;
         position: absolute;
         top: 1rem;
         right: 1rem;
@@ -524,53 +524,56 @@ hr{
             width: 49%;
         }
     }
-  //CONTACT
-  #opacity{
-    width: 100%;
-    height: 100%;
-    background-color: $white;
-    position: fixed;
-    opacity: 0.5;
-    z-index: 8;
-    display: none;
-}
-  #contact{
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      height: 90%;
-      border-radius: 5px;
-      iframe{
-          pointer-events: visible;
-          opacity: 1;
-          height: 300px;
-      }
-      form{
+    //CONTACT
+    #opacity{
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        position: fixed;
+        opacity: 0.5;
+        z-index: 8;
+        display: none;
+    }
+    #opacity:hover{
+      cursor: pointer;
+    }
+      #contact{
+          position: fixed;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 90%;
+          height: 90%;
           border-radius: 5px;
-          padding-left: 2rem;
-          width: 300px !important;
-          height: 500px;
-          background-color: $white;
-          position: absolute;
-          left: 75%;
-          
-          h1{
-              display: none;
+          iframe{
+              pointer-events: visible;
+              opacity: 1;
+              height: 300px;
           }
-          #input{
-              padding-top: 0 !important;
-          }
-          input{
-              color: $black !important;
-              border-bottom: 1px solid $black !important;
-          }
-          input::placeholder{
-              color: $black !important;
+          form{
+              border-radius: 5px;
+              padding-left: 2rem;
+              width: 300px !important;
+              height: 500px;
+              background-color: $white;
+              position: absolute;
+              left: 75%;
+              
+              h1{
+                  display: none;
+              }
+              #input{
+                  padding-top: 0 !important;
+              }
+              input{
+                  color: $black !important;
+                  border-bottom: 1px solid $black !important;
+              }
+              input::placeholder{
+                  color: $black !important;
+              }
           }
       }
-  }
 }
 
 

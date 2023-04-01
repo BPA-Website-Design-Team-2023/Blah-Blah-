@@ -22,17 +22,18 @@ body {
 h1 {
   font-family: League Spartant;
   font-size: 2rem;
+  color: white;
 }
 
 p {
+  color: white;
   font-size: 13px;
   font-family: Montserrate;
-  line-height: 1.5rem;
 }
 
 h3 {
   font-family: League Spartant;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 hr {
@@ -40,6 +41,23 @@ hr {
   background-color: #D33BAC;
   border: none;
   opacity: 0.25;
+}
+
+div {
+  color: white;
+}
+
+button {
+  color: white;
+  padding: 1rem;
+  border-style: none;
+  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
+  border-radius: 50px;
+}
+
+button:hover {
+  background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
+  cursor: pointer;
 }
 
 .footer {
@@ -160,35 +178,31 @@ hr {
 #header-laptop {
   width: 100%;
   position: fixed;
-  background-color: #000;
   z-index: 5;
-  height: 6rem !important;
+  height: 6rem;
   display: flex;
+  overflow-y: hidden;
   display: none;
 }
 #header-laptop #top {
-  height: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  background-color: #000;
 }
 #header-laptop img {
   height: 4.5rem;
-  padding-left: 2rem;
 }
-#header-laptop #nav {
-  position: absolute;
-  right: 2rem;
-}
-#header-laptop #nav a {
-  text-decoration: none;
-  color: white;
-  padding-left: 1rem;
-}
-#header-laptop #nav .active {
+#header-laptop .active {
   color: #D33BAC;
 }
-#header-laptop #nav a:hover {
+#header-laptop a {
+  text-decoration: none;
+  color: white;
+  margin-left: 3rem;
+}
+#header-laptop a:hover {
   color: #D33BAC;
   cursor: pointer;
 }
@@ -259,7 +273,7 @@ hr {
 }
 #contact i {
   font-size: 1.5rem;
-  color: white;
+  color: #000;
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -268,38 +282,73 @@ hr {
   cursor: pointer;
 }
 
-#search {
+#first {
+  position: relative;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 4rem;
-  padding: 3rem 0rem;
+  height: 100vh;
+  overflow-y: hidden;
 }
-#search #search-bar {
+#first #section1 {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 15rem;
+  padding-left: 2rem;
+  z-index: 1;
+}
+#first #section1 #used {
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 1rem;
+  background-color: gray;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50px;
+}
+#first #section1 #info {
+  padding-bottom: 2rem;
+}
+#first #section2 {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  padding-right: 2rem;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  z-index: 1;
+}
+#first #section2 h1 {
+  color: #D33BAC;
+  text-align: end;
+}
+#first #section2 #search-bar {
+  overflow-y: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 93%;
+  width: 100%;
   background-color: white;
   border-radius: 20px;
+  margin: 1rem 0;
 }
-#search #search-bar #icon {
+#first #section2 #search-bar #icon {
   font-size: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+  color: #000;
 }
-#search #search-bar input {
+#first #section2 #search-bar input {
   height: 4rem;
   width: 100%;
   border-style: none;
   padding-right: 1rem;
 }
-#search #search-bar input:focus {
+#first #section2 #search-bar input:focus {
   outline: none;
 }
-#search #search-bar #go {
+#first #section2 #search-bar #go {
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
   color: white;
   border-style: none;
@@ -307,194 +356,57 @@ hr {
   width: 4rem;
   height: 3rem;
   margin-right: 1rem;
+  overflow-y: hidden;
 }
-#search #search-bar #go:hover {
+#first #section2 #search-bar #go:hover {
   background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
   cursor: pointer;
 }
-#search #filter {
-  padding-top: 1rem;
+#first #section2 #bottom {
   display: flex;
   flex-direction: row;
-  width: 93%;
-  justify-content: space-between;
-  align-items: center;
-}
-#search #filter .list {
-  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  color: white;
-  display: flex;
-  height: 3rem;
-  border-radius: 25px;
-  border-style: none;
-  align-items: center;
-  padding: 0 1rem;
-  cursor: pointer;
   justify-content: space-between;
 }
-#search #filter .list i {
-  font-size: 10px;
+#first #section2 #quatity, #first #section2 #quickly {
+  text-align: end;
+  width: 45%;
 }
-#search #filter .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  z-index: 3;
-  box-shadow: 5px 5px 100px #000;
-  border-radius: 5px;
-  width: 20rem;
-  top: 17rem;
-}
-#search #filter .dropdown-menu button {
-  padding: 1rem;
-  text-decoration: none;
-  display: block;
-  box-shadow: none;
-  border-style: none;
-  background-color: white;
-  width: 100%;
-  height: 100%;
-}
-#search #filter .item > li {
-  width: 20rem;
-  border-bottom: 1px solid lightgray;
-  padding: 0.5rem;
-}
-#search #filter .item > li button {
-  font-family: Montserrate;
-  font-size: 16px;
-  padding: 1rem;
-  text-align: start;
-}
-#search #filter .item > li:last-child {
-  border-bottom: none;
-}
-#search #filter .item > li:hover {
-  cursor: pointer;
-}
-#search #filter .item > li:hover button {
+#first #section2 #quatity i, #first #section2 #quickly i {
   color: #731AC3;
-  cursor: pointer;
-  font-size: 17px;
+  font-size: 2rem;
 }
-#search #filter #price-down {
-  left: 10%;
-}
-#search #filter #miles-down {
-  left: 20%;
-}
-#search #filter #year-down {
-  right: 20%;
-}
-#search #filter #manufacturer-down {
-  right: 5%;
-}
-#search #filter .show {
-  display: flex;
+#first #section2 #quatity h4, #first #section2 #quickly h4 {
+  font-family: League Spartant;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 
-#inventory {
-  width: 90%;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
+#set-height {
+  display: block;
+  height: 2000px;
 }
-#inventory .box {
-  background-color: white;
-  border-radius: 5px;
-  margin-top: 1rem;
-}
-#inventory .box img {
+
+#v0 {
+  position: fixed;
+  top: 5%;
+  left: 0;
   width: 100%;
-}
-#inventory .box h3 {
-  padding: 1rem 1rem 0 1rem;
-}
-#inventory .box p {
-  font-size: 12px;
-}
-#inventory .box #info {
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: row;
-}
-#inventory .box #bottom {
-  display: flex;
-  flex-direction: row;
-  padding: 3rem 1rem 1rem 1rem;
-  justify-content: space-between;
-}
-#inventory #skip {
-  width: 100%;
-  padding: 3rem 0 5rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-#inventory #skip p {
-  color: white;
-}
-#inventory #skip #left, #inventory #skip #right {
-  display: flex;
-  justify-content: center;
-}
-#inventory #skip #left i, #inventory #skip #left button, #inventory #skip #right i, #inventory #skip #right button {
-  color: white;
-  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  border-style: none;
-  padding: 1rem;
-  border-radius: 5px;
-}
-#inventory #skip #left button:hover, #inventory #skip #right button:hover {
-  background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
-}
-#inventory #skip #left button:enabled:active, #inventory #skip #right button:enabled:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-#inventory #skip #left button:disabled,
-#inventory #skip #left button[disabled], #inventory #skip #right button:disabled,
-#inventory #skip #right button[disabled] {
-  color: white;
-  background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-  border-style: none;
-  padding: 1rem;
-  border-radius: 5px;
-  cursor: not-allowed;
 }
 
 @media only screen and (min-width: 600px) {
-  #filter .list {
-    width: 36% !important;
-  }
-  #filter .first {
-    display: inline-flex !important;
+  #first #section2 {
+    width: 25rem;
   }
 }
 @media only screen and (min-width: 850px) {
-  #header-mobile #top {
-    height: 6rem;
+  h1 {
+    font-size: 3rem !important;
   }
-  #header-mobile #top img {
-    height: 4.5rem;
+  #header-mobile {
+    display: none;
   }
-  #header-mobile #top i {
-    font-size: 2.7rem;
-  }
-  #filter .list {
-    width: 25% !important;
-  }
-  #filter .second, #filter .third {
-    display: inline-flex !important;
-  }
-  #inventory {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between !important;
-  }
-  #inventory .box {
-    width: 49%;
+  #header-laptop {
+    display: block;
   }
   #opacity {
     width: 100%;
@@ -505,11 +417,62 @@ hr {
     z-index: 8;
     display: none;
   }
-  #opacity:hover {
-    cursor: pointer;
+  #contact {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+  }
+  #contact iframe {
+    pointer-events: visible;
+    opacity: 1;
+    height: 300px;
+  }
+  #contact form {
+    border-radius: 5px;
+    padding-left: 2rem;
+    width: 300px !important;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    left: 75%;
+  }
+  #contact form h1 {
+    display: none;
+  }
+  #contact form #input {
+    padding-top: 0 !important;
+  }
+  #contact form input {
+    color: #000 !important;
+    border-bottom: 1px solid #000 !important;
+  }
+  #contact form input::-moz-placeholder {
+    color: #000 !important;
+  }
+  #contact form input::placeholder {
+    color: #000 !important;
+  }
+  #first #section1 {
+    margin-left: 5%;
+    width: 17rem;
+  }
+  #first #section2 {
+    margin-right: 5%;
+  }
+  #opacity {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    opacity: 0.5;
+    z-index: 8;
   }
   #contact {
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -549,22 +512,7 @@ hr {
   }
 }
 @media only screen and (min-width: 1000px) {
-  #header-mobile {
-    display: none;
-  }
-  #header-laptop {
-    display: block;
-  }
-  #filter .list {
-    width: 20% !important;
-  }
-  #filter .fourth {
-    display: inline-flex !important;
-  }
-  #filter #menu {
-    display: none !important;
-  }
-  #inventory .box {
+  #inventory #box {
     width: 32%;
   }
 }/*# sourceMappingURL=style.css.map */
