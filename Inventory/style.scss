@@ -265,9 +265,9 @@ hr{
     i{
         font-size: 1.5rem;
         color: $white;
-        position: absolute;
+        position: fixed;
         top: 1rem;
-        right: 1rem;
+        right: 6%;
     }
     i:hover{
         cursor: pointer;
@@ -524,8 +524,8 @@ hr{
             width: 49%;
         }
     }
-    //CONTACT
-    #opacity{
+      //CONTACT
+      #opacity{
         width: 100%;
         height: 100%;
         background-color: $white;
@@ -542,8 +542,9 @@ hr{
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
-          width: 90%;
-          height: 90%;
+          width: 60%;
+          //height: 90%;
+          box-shadow: 5px 5px 100px $black;
           border-radius: 5px;
           iframe{
               pointer-events: visible;
@@ -558,7 +559,7 @@ hr{
               background-color: $white;
               position: absolute;
               left: 75%;
-              
+              box-shadow: 5px 5px 100px $black;
               h1{
                   display: none;
               }
@@ -572,6 +573,9 @@ hr{
               input::placeholder{
                   color: $black !important;
               }
+          }
+          i{
+            color: $black !important;
           }
       }
 }

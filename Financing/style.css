@@ -99,6 +99,10 @@ hr {
   color: #D33BAC;
 }
 
+#cursor:hover {
+  cursor: pointer;
+}
+
 #header-laptop {
   width: 100%;
   position: fixed;
@@ -197,10 +201,10 @@ hr {
 }
 #contact i {
   font-size: 1.5rem;
-  color: #000;
-  position: absolute;
+  color: white;
+  position: fixed;
   top: 1rem;
-  right: 1rem;
+  right: 6%;
 }
 #contact i:hover {
   cursor: pointer;
@@ -418,11 +422,12 @@ iframe {
     cursor: pointer;
   }
   #contact {
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
+    width: 60%;
+    box-shadow: 5px 5px 100px #000;
     border-radius: 5px;
   }
   #contact iframe {
@@ -438,6 +443,7 @@ iframe {
     background-color: white;
     position: absolute;
     left: 75%;
+    box-shadow: 5px 5px 100px #000;
   }
   #contact form h1 {
     display: none;
@@ -453,6 +459,9 @@ iframe {
     color: #000 !important;
   }
   #contact form input::placeholder {
+    color: #000 !important;
+  }
+  #contact i {
     color: #000 !important;
   }
   #container {

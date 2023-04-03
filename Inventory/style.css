@@ -260,9 +260,9 @@ hr {
 #contact i {
   font-size: 1.5rem;
   color: white;
-  position: absolute;
+  position: fixed;
   top: 1rem;
-  right: 1rem;
+  right: 6%;
 }
 #contact i:hover {
   cursor: pointer;
@@ -513,8 +513,8 @@ hr {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
+    width: 60%;
+    box-shadow: 5px 5px 100px #000;
     border-radius: 5px;
   }
   #contact iframe {
@@ -530,6 +530,7 @@ hr {
     background-color: white;
     position: absolute;
     left: 75%;
+    box-shadow: 5px 5px 100px #000;
   }
   #contact form h1 {
     display: none;
@@ -545,6 +546,9 @@ hr {
     color: #000 !important;
   }
   #contact form input::placeholder {
+    color: #000 !important;
+  }
+  #contact i {
     color: #000 !important;
   }
 }

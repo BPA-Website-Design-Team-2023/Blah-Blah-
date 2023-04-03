@@ -276,9 +276,9 @@ button:hover{
   i{
       font-size: 1.5rem;
       color: $white;
-      position: absolute;
+      position: fixed;
       top: 1rem;
-      right: 1rem;
+      right: 6%;
   }
   i:hover{
       cursor: pointer;
@@ -542,56 +542,60 @@ button:hover{
       display: block;
   }
 
-  //CONTACT
-  #opacity{
-    width: 100%;
-    height: 100%;
-    background-color: $white;
-    position: fixed;
-    opacity: 0.5;
-    z-index: 8;
-    display: none;
-}
-#opacity:hover{
-  cursor: pointer;
-}
-  #contact{
+    //CONTACT
+    #opacity{
+      width: 100%;
+      height: 100%;
+      background-color: $white;
       position: fixed;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      height: 90%;
-      border-radius: 5px;
-      iframe{
-          pointer-events: visible;
-          opacity: 1;
-          height: 300px;
-      }
-      form{
-          border-radius: 5px;
-          padding-left: 2rem;
-          width: 300px !important;
-          height: 500px;
-          background-color: $white;
-          position: absolute;
-          left: 75%;
-          
-          h1{
-              display: none;
-          }
-          #input{
-              padding-top: 0 !important;
-          }
-          input{
-              color: $black !important;
-              border-bottom: 1px solid $black !important;
-          }
-          input::placeholder{
-              color: $black !important;
-          }
-      }
+      opacity: 0.5;
+      z-index: 8;
+      display: none;
   }
+  #opacity:hover{
+    cursor: pointer;
+  }
+    #contact{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        //height: 90%;
+        box-shadow: 5px 5px 100px $black;
+        border-radius: 5px;
+        iframe{
+            pointer-events: visible;
+            opacity: 1;
+            height: 300px;
+        }
+        form{
+            border-radius: 5px;
+            padding-left: 2rem;
+            width: 300px !important;
+            height: 500px;
+            background-color: $white;
+            position: absolute;
+            left: 75%;
+            box-shadow: 5px 5px 100px $black;
+            h1{
+                display: none;
+            }
+            #input{
+                padding-top: 0 !important;
+            }
+            input{
+                color: $black !important;
+                border-bottom: 1px solid $black !important;
+            }
+            input::placeholder{
+                color: $black !important;
+            }
+        }
+        i{
+          color: $black !important;
+        }
+    }
 
   #first{
     #top_car{
