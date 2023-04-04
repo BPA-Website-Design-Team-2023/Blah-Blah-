@@ -98,40 +98,48 @@
     <!-- Calendly badge widget end -->
 
     <div id="first">
-      <video id="car_animation" src="../Picture/Home/car_animation.mp4" autoplay muted></video>
-      <img id="top_car" src="../Picture/Home/top_car.png" alt="">
-      <div id="intro">
-        <p id="used">Used Car</p>
-        <h1>USED CAR DEALERSHIP</h1>
-        <div id="info">Find your next car at <br>Refined Vehicles</div>
-        <a href="../Inventory/index.html"><button>OUR INVENTORY</button></a>
-      </div>
-    </div>
-
-    <div id="second">
-      <img src="../Picture/Home/right_car.png" alt="">
-      <div id="right">
-        <h1>WE'LL DRIVE YOU<br>HAPPY</h1>
-
-        <form id="search-bar" action="../Inventory/index.html">
-          <i id="icon" class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search Make, Model, or Keyword" name="search">
-          <button id="go">GO</button>
-        </form>
-
-        <div id="bottom">
-          <div id="quatity">
-            <i class="fa-solid fa-car"></i>
-            <h4>QUANTITY VEHICLES</h4>
-            <p>Wide range of affordable vehicles</p>
-          </div>
-          <div id="quickly">
-            <i class="fa-solid fa-circle-check"></i>
-            <h4>QUICK AND EASY</h4>
-            <p>Browse, contact, and come on over for an easy purchase</p>
+      <section class="container">
+        <div id="section1">
+          <p id="used">Used Car</p>
+          <h1>USED CAR DEALERSHIP</h1>
+          <div id="info">Find your next car at <br>Refined Vehicles</div>
+          <a href="../Inventory/index.html"><button>OUR INVENTORY</button></a>
+        </div>
+      </section>
+      <section class="container">
+        <div id="section2">
+          <div id="right">
+            <h1>WE'LL DRIVE YOU<br>HAPPY</h1>
+    
+            <form id="search-bar" action="../Inventory/index.html">
+              <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search Make, Model, or Keyword" name="search">
+              <button id="go">GO</button>
+            </form>
+    
+            <div id="bottom">
+              <div id="quatity">
+                <i class="fa-solid fa-car"></i>
+                <h4>QUANTITY VEHICLES</h4>
+                <p>Wide range of affordable vehicles</p>
+              </div>
+              <div id="quickly">
+                <i class="fa-solid fa-circle-check"></i>
+                <h4>QUICK AND EASY</h4>
+                <p>Browse, contact, and come on over for an easy purchase</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+    </div>
+
+    <div id="video">
+        <p id="time"></p>
+        <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload" autoplay muted>
+          <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="../Picture/Home/car_animation.mp4"></source>
+        </video>
+      
     </div>
 
     <div id="third">
@@ -187,7 +195,10 @@
       </div>
     </div>
   </body>
+
+  
   <hr>
+  
     <div class="footer">
       <div id="address">
         <ul id="text">
@@ -205,7 +216,7 @@
       <a href="https://www.linkedin.com/school/blue-valley-west-high-school/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
-  
+
 
   <script src="../navbar.js"></script>
   <script src="script.js"></script>

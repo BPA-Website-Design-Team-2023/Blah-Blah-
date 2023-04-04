@@ -9,12 +9,14 @@
 * {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   letter-spacing: 1px;
   font-family: Montserrate;
 }
 
 body {
   background-color: #000;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -271,31 +273,41 @@ button:hover {
 }
 #contact i {
   font-size: 1.5rem;
-  color: #000;
-  position: absolute;
+  color: white;
+  position: fixed;
   top: 1rem;
-  right: 1rem;
+  right: 6%;
 }
 #contact i:hover {
   cursor: pointer;
 }
 
 #first {
-  top: 5rem;
-  position: absolute;
-  width: 100%;
-}
-#first .container {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
 }
-#first #section1 {
-  position: sticky;
-  width: 17rem;
+#first #car_animation {
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+#first #top_car {
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50%;
+}
+#first #intro {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 15rem;
   padding-left: 2rem;
-  z-index: 1;
-  top: 35%;
 }
-#first #section1 #used {
+#first #intro #used {
   padding: 0.2rem 0.5rem;
   margin-bottom: 1rem;
   background-color: gray;
@@ -303,24 +315,37 @@ button:hover {
   width: fit-content;
   border-radius: 50px;
 }
-#first #section1 #info {
+#first #intro #info {
   padding-bottom: 2rem;
 }
-#first #section2 {
-  position: sticky;
-  left: 95%;
-  top: 40%;
-  padding-right: 2rem;
+
+#second {
+  position: relative;
+  overflow-y: hidden;
+  height: 100vh;
+}
+#second img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#second #right {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  padding-right: 1rem;
   display: flex;
   align-items: end;
   flex-direction: column;
-  z-index: 1;
 }
-#first #section2 h1 {
+#second #right h1 {
   color: #D33BAC;
   text-align: end;
 }
-#first #section2 #search-bar {
+#second #right #search-bar {
   overflow-y: hidden;
   display: flex;
   flex-direction: row;
@@ -330,22 +355,22 @@ button:hover {
   border-radius: 20px;
   margin: 1rem 0;
 }
-#first #section2 #search-bar #icon {
+#second #right #search-bar #icon {
   font-size: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
   color: #000;
 }
-#first #section2 #search-bar input {
+#second #right #search-bar input {
   height: 4rem;
   width: 100%;
   border-style: none;
   padding-right: 1rem;
 }
-#first #section2 #search-bar input:focus {
+#second #right #search-bar input:focus {
   outline: none;
 }
-#first #section2 #search-bar #go {
+#second #right #search-bar #go {
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
   color: white;
   border-style: none;
@@ -355,45 +380,27 @@ button:hover {
   margin-right: 1rem;
   overflow-y: hidden;
 }
-#first #section2 #search-bar #go:hover {
+#second #right #search-bar #go:hover {
   background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
   cursor: pointer;
 }
-#first #section2 #bottom {
+#second #right #bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-#first #section2 #quatity, #first #section2 #quickly {
+#second #right #quatity, #second #right #quickly {
   text-align: end;
   width: 45%;
 }
-#first #section2 #quatity i, #first #section2 #quickly i {
+#second #right #quatity i, #second #right #quickly i {
   color: #731AC3;
   font-size: 2rem;
 }
-#first #section2 #quatity h4, #first #section2 #quickly h4 {
+#second #right #quatity h4, #second #right #quickly h4 {
   font-family: League Spartant;
   font-size: 0.8rem;
   margin-top: 0.5rem;
-}
-#first .container:nth-of-type(1) {
-  height: 800px;
-}
-#first .container:nth-of-type(2) {
-  height: 800px;
-}
-
-#video {
-  position: relative;
-  height: 1800px;
-  display: block;
-}
-#video #v0 {
-  position: sticky;
-  top: 0%;
-  left: 0;
-  width: 100%;
 }
 
 #third {
@@ -480,7 +487,7 @@ button:hover {
 }
 
 @media only screen and (min-width: 600px) {
-  #first #section2 {
+  #second #right {
     width: 25rem;
   }
   #fourth #dissapear p {
@@ -518,13 +525,16 @@ button:hover {
     z-index: 8;
     display: none;
   }
+  #opacity:hover {
+    cursor: pointer;
+  }
   #contact {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
+    width: 60%;
+    box-shadow: 5px 5px 100px #000;
     border-radius: 5px;
   }
   #contact iframe {
@@ -540,6 +550,7 @@ button:hover {
     background-color: white;
     position: absolute;
     left: 75%;
+    box-shadow: 5px 5px 100px #000;
   }
   #contact form h1 {
     display: none;
@@ -557,119 +568,22 @@ button:hover {
   #contact form input::placeholder {
     color: #000 !important;
   }
-  #first {
-    top: 5rem;
-    position: absolute;
-    width: 100%;
+  #contact i {
+    color: #000 !important;
   }
-  #first .container {
-    position: relative;
+  #first #top_car {
+    display: none;
   }
-  #first #section1 {
-    position: sticky;
-    width: 17rem;
-    padding-left: 2rem;
-    z-index: 1;
-    top: 35%;
-  }
-  #first #section1 #used {
-    padding: 0.2rem 0.5rem;
-    margin-bottom: 1rem;
-    background-color: gray;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 50px;
-  }
-  #first #section1 #info {
-    padding-bottom: 2rem;
-  }
-  #first #section2 {
-    position: sticky;
-    left: 95%;
-    top: 40%;
-    padding-right: 2rem;
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    z-index: 1;
-  }
-  #first #section2 h1 {
-    color: #D33BAC;
-    text-align: end;
-  }
-  #first #section2 #search-bar {
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    border-radius: 20px;
-    margin: 1rem 0;
-  }
-  #first #section2 #search-bar #icon {
-    font-size: 1.5rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    color: #000;
-  }
-  #first #section2 #search-bar input {
-    height: 4rem;
-    width: 100%;
-    border-style: none;
-    padding-right: 1rem;
-  }
-  #first #section2 #search-bar input:focus {
-    outline: none;
-  }
-  #first #section2 #search-bar #go {
-    background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-    color: white;
-    border-style: none;
-    border-radius: 20px;
-    width: 4rem;
-    height: 3rem;
-    margin-right: 1rem;
-    overflow-y: hidden;
-  }
-  #first #section2 #search-bar #go:hover {
-    background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
-    cursor: pointer;
-  }
-  #first #section2 #bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #first #section2 #quatity, #first #section2 #quickly {
-    text-align: end;
-    width: 45%;
-  }
-  #first #section2 #quatity i, #first #section2 #quickly i {
-    color: #731AC3;
-    font-size: 2rem;
-  }
-  #first #section2 #quatity h4, #first #section2 #quickly h4 {
-    font-family: League Spartant;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-  }
-  #first .container:nth-of-type(1) {
-    height: 800px;
-  }
-  #first .container:nth-of-type(2) {
-    height: 800px;
-  }
-  #video {
-    position: relative;
-    height: 1800px;
+  #first #car_animation {
     display: block;
+    top: 3rem;
   }
-  #video #v0 {
-    position: sticky;
-    top: 0%;
-    left: 0;
-    width: 100%;
+  #first #intro {
+    margin-left: 5%;
+    width: 17rem;
+  }
+  #second #right {
+    margin-right: 5%;
   }
   #third {
     margin: 3rem 15rem !important;

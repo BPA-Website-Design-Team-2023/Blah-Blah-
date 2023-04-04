@@ -25,11 +25,14 @@ $normal-font-line-height:1.5;
 *{
     padding:0;
     margin:0;
+    overflow-x: hidden;
     letter-spacing: 1px;
     font-family: Montserrate;
 }
 body{
     background-color: $black;
+    overflow-y: hidden;
+
 }
 h1{
     font-family: League Spartant;
@@ -272,30 +275,40 @@ button:hover{
   }
   i{
       font-size: 1.5rem;
-      color: $black;
-      position: absolute;
+      color: $white;
+      position: fixed;
       top: 1rem;
-      right: 1rem;
+      right: 6%;
   }
   i:hover{
       cursor: pointer;
   }
 }
 
-
 #first{
-  top: 5rem;
-  position: absolute;
+  position: relative;
   width: 100%;
-  .container{
-    position: relative;
+  height: 100vh;
+  overflow-y: hidden;
+  #car_animation{
+    width: 100%;
+    height: 100vh;
+    display: none;
   }
-  #section1{
-    position: sticky;
-    width: 17rem;
+
+  #top_car{
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50%;
+  }
+  #intro{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 15rem;
     padding-left: 2rem;
-    z-index: 1;
-    top: 35%;
     #used{
       padding: .2rem .5rem;
       margin-bottom: 1rem;
@@ -307,15 +320,29 @@ button:hover{
       padding-bottom: 2rem;
     }
   }
-  #section2{
-    position: sticky ;
-    left: 95%;
-    top: 40%;
-    padding-right: 2rem;
+}
+
+#second{
+  //margin-top: 50vh;
+  position: relative;
+  overflow-y: hidden;
+  height: 100vh;
+  img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  #right{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    padding-right: 1rem;
     display: flex;
     align-items: end;
     flex-direction: column;
-    z-index: 1;
     h1{
       color: $pink;
       text-align: end;
@@ -378,23 +405,7 @@ button:hover{
       }
     }
   }
-  .container:nth-of-type(1){
-    height: 800px;
-  }
-  .container:nth-of-type(2){
-    height: 800px;
-  }
-}
-#video{
-  position: relative;
-  height: 1800px;
-  display: block;
-  #v0 {
-    position: sticky;
-    top: 0%;
-    left: 0;
-    width: 100%;
-  }
+
 }
 
 #third{
@@ -436,6 +447,7 @@ button:hover{
     }
   }
 }
+
 #fourth{
   position: relative;
   //margin-top: 10rem;
@@ -486,16 +498,13 @@ button:hover{
 }
 
 
-
-
-
-
 @media only screen and (min-width: 300px){
 }
 
 @media only screen and (min-width: 600px) {
-  #first{
-    #section2{
+
+  #second{
+    #right{
       width: 25rem;
     }
   }
@@ -519,6 +528,7 @@ button:hover{
     }
   }
 
+
 }
 
 @media only screen and (min-width: 850px) {
@@ -532,165 +542,79 @@ button:hover{
       display: block;
   }
 
-  //CONTACT
-  #opacity{
-    width: 100%;
-    height: 100%;
-    background-color: $white;
-    position: fixed;
-    opacity: 0.5;
-    z-index: 8;
-    display: none;
-}
-  #contact{
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      height: 90%;
-      border-radius: 5px;
-      iframe{
-          pointer-events: visible;
-          opacity: 1;
-          height: 300px;
-      }
-      form{
-          border-radius: 5px;
-          padding-left: 2rem;
-          width: 300px !important;
-          height: 500px;
-          background-color: $white;
-          position: absolute;
-          left: 75%;
-          
-          h1{
-              display: none;
-          }
-          #input{
-              padding-top: 0 !important;
-          }
-          input{
-              color: $black !important;
-              border-bottom: 1px solid $black !important;
-          }
-          input::placeholder{
-              color: $black !important;
-          }
-      }
+    //CONTACT
+    #opacity{
+      width: 100%;
+      height: 100%;
+      background-color: $white;
+      position: fixed;
+      opacity: 0.5;
+      z-index: 8;
+      display: none;
   }
+  #opacity:hover{
+    cursor: pointer;
+  }
+    #contact{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        //height: 90%;
+        box-shadow: 5px 5px 100px $black;
+        border-radius: 5px;
+        iframe{
+            pointer-events: visible;
+            opacity: 1;
+            height: 300px;
+        }
+        form{
+            border-radius: 5px;
+            padding-left: 2rem;
+            width: 300px !important;
+            height: 500px;
+            background-color: $white;
+            position: absolute;
+            left: 75%;
+            box-shadow: 5px 5px 100px $black;
+            h1{
+                display: none;
+            }
+            #input{
+                padding-top: 0 !important;
+            }
+            input{
+                color: $black !important;
+                border-bottom: 1px solid $black !important;
+            }
+            input::placeholder{
+                color: $black !important;
+            }
+        }
+        i{
+          color: $black !important;
+        }
+    }
 
   #first{
-    top: 5rem;
-    position: absolute;
-    width: 100%;
-    .container{
-      position: relative;
+    #top_car{
+      display: none;
     }
-    #section1{
-      position: sticky;
+    #car_animation{
+      display: block;
+      //position: relative;
+      top: 3rem;
+    }
+    #intro{
+      margin-left: 5%;
       width: 17rem;
-      padding-left: 2rem;
-      z-index: 1;
-      top: 35%;
-      #used{
-        padding: .2rem .5rem;
-        margin-bottom: 1rem;
-        background-color: $gray;
-        width: fit-content;
-        border-radius: 50px;
-      }
-      #info{
-        padding-bottom: 2rem;
-      }
-    }
-    #section2{
-      position: sticky ;
-      left: 95%;
-      top: 40%;
-      padding-right: 2rem;
-      display: flex;
-      align-items: end;
-      flex-direction: column;
-      z-index: 1;
-      h1{
-        color: $pink;
-        text-align: end;
-      }
-      #search-bar{
-        overflow-y: hidden;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        background-color: $white;
-        border-radius: 20px;
-        margin: 1rem 0;
-        #icon{
-            font-size: 1.5rem;
-            padding-right: 1rem;
-            padding-left: 1rem;
-            color: $black;
-        }
-        input{
-            height: 4rem;
-            width: 100%;
-            border-style: none;
-            padding-right: 1rem;
-        }
-        input:focus {
-            outline: none;
-        }
-        #go{
-            background-image: $normal-background-color;
-            color: $white;
-            border-style: none;
-            border-radius: 20px;
-            width: 4rem;
-            height: 3rem;
-            margin-right: 1rem;
-            overflow-y: hidden;
-        }
-        #go:hover{
-            background-image: $reverse-background-color;
-            cursor: pointer;
-        }
-      }
-      #bottom{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      #quatity, #quickly{
-        text-align: end;
-        width: 45%;
-        i{
-          color: $purple;
-          font-size: 2rem;
-        }
-        h4{
-          font-family: League Spartant;
-          font-size: .8rem;
-          margin-top: .5rem;
-        }
-      }
-    }
-    .container:nth-of-type(1){
-      height: 800px;
-    }
-    .container:nth-of-type(2){
-      height: 800px;
     }
   }
-  #video{
-    position: relative;
-    height: 1800px;
-    display: block;
-    #v0 {
-      position: sticky;
-      top: 0%;
-      left: 0;
-      width: 100%;
+
+  #second{
+    #right{
+      margin-right:5%;
     }
   }
   #third{
