@@ -38,6 +38,10 @@ car.addEventListener("timeupdate", function(){
 }
 );
 
+window.onbeforeunload = function(){
+    window.scrollTo(0,0)
+}
+
 /*
 window.addEventListener("mouseover", function(){
     console.log("Time " +  car.currentTime)
