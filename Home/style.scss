@@ -30,6 +30,7 @@ $normal-font-line-height:1.5;
 }
 body{
     background-color: $black;
+    overflow-y: hidden;
 }
 h1{
     font-family: League Spartant;
@@ -285,7 +286,7 @@ button:hover{
 
 #first{
   top: 5rem;
-  position: absolute;
+  position: relative;
   width: 100%;
   .container{
     position: relative;
@@ -311,7 +312,7 @@ button:hover{
     position: sticky ;
     left: 95%;
     top: 40%;
-    padding-right: 2rem;
+    padding: 2rem;
     display: flex;
     align-items: end;
     flex-direction: column;
@@ -388,7 +389,7 @@ button:hover{
 #video{
   position: relative;
   height: 1800px;
-  display: block;
+  display: none;
   #v0 {
     position: sticky;
     top: 0%;
@@ -396,89 +397,102 @@ button:hover{
     width: 100%;
   }
 }
-
-#third{
-  background-image: $normal-background-color;
-  margin: 6rem 1rem !important;
-  padding: 1rem;
-  border-radius: 5px;
+#contain3{
+  height: 800px;
   position: relative;
-  #left{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 5rem;
-    color: $purple;
-  }
-  #right{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 5rem;
-    color: $pink;
-  }
-  #container{
-    background-color: $black;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-
-    #person{
+  #third{
+    background-image: $normal-background-color;
+    margin: 6rem 1rem !important;
+    padding: 1rem;
+    border-radius: 5px;
+    position: sticky;
+    top: 50%;
+    transform: translate(0, -50%);
+    #left{
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 5rem;
+      color: $purple;
+    }
+    #right{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 5rem;
+      color: $pink;
+    }
+    #container{
+      background-color: $black;
+      padding: 3rem;
       display: flex;
-      flex-direction: row;
-      margin-top: 1rem;
-      img{
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50px;
-        margin-right: 1rem;
+      flex-direction: column;
+  
+      #person{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        img{
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50px;
+          margin-right: 1rem;
+        }
       }
     }
   }
 }
-#fourth{
-  position: relative;
-  //margin-top: 10rem;
-  padding: 6rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  //background-color: #731AC3;
-  height: 100vh;
-  #dissapear{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    h1{
-      text-align: center;
-      background-image: $normal-background-color;
-      background-clip: text;
-      color: transparent;
-    }
-    p{
-      text-align: center;
-    }
-  }
-  #appear{
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    display: none;
-    //margin: 6rem 0;
-    #top, #bottom{
-      width: 100%;
-      #person{
-        img{
-          width: 100%;
+#contain4-out{
+  position: relative;
+  height: 1200px;
+  #contain4-in{
+    position: sticky;
+    top: 30%;
+    transform: translate(0, -50%);
+    #fourth{
+      position: relative;
+      padding: 0 1rem 6rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      #dissapear{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        h1{
+          text-align: center;
+          background-image: $normal-background-color;
+          background-clip: text;
+          color: transparent;
         }
-        #name{
-          color: #731AC3;
+        p{
+          text-align: center;
+        }
+      }
+      #appear{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        display: none;
+        //margin: 6rem 0;
+        #top, #bottom{
+          width: 100%;
+          #person{
+            img{
+              width: 100%;
+            }
+            #name{
+              color: #731AC3;
+            }
+          }
         }
       }
     }
@@ -581,120 +595,23 @@ button:hover{
   }
 
   #first{
-    top: 5rem;
-    position: absolute;
-    width: 100%;
-    .container{
-      position: relative;
-    }
+    position: absolute !important;
     #section1{
-      position: sticky;
-      width: 17rem;
-      padding-left: 2rem;
-      z-index: 1;
-      top: 35%;
-      #used{
-        padding: .2rem .5rem;
-        margin-bottom: 1rem;
-        background-color: $gray;
-        width: fit-content;
-        border-radius: 50px;
-      }
-      #info{
-        padding-bottom: 2rem;
-      }
+      margin-left: 5%;
     }
     #section2{
-      position: sticky ;
-      left: 95%;
-      top: 40%;
-      padding-right: 2rem;
-      display: flex;
-      align-items: end;
-      flex-direction: column;
-      z-index: 1;
-      h1{
-        color: $pink;
-        text-align: end;
-      }
-      #search-bar{
-        overflow-y: hidden;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        background-color: $white;
-        border-radius: 20px;
-        margin: 1rem 0;
-        #icon{
-            font-size: 1.5rem;
-            padding-right: 1rem;
-            padding-left: 1rem;
-            color: $black;
-        }
-        input{
-            height: 4rem;
-            width: 100%;
-            border-style: none;
-            padding-right: 1rem;
-        }
-        input:focus {
-            outline: none;
-        }
-        #go{
-            background-image: $normal-background-color;
-            color: $white;
-            border-style: none;
-            border-radius: 20px;
-            width: 4rem;
-            height: 3rem;
-            margin-right: 1rem;
-            overflow-y: hidden;
-        }
-        #go:hover{
-            background-image: $reverse-background-color;
-            cursor: pointer;
-        }
-      }
-      #bottom{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      #quatity, #quickly{
-        text-align: end;
-        width: 45%;
-        i{
-          color: $purple;
-          font-size: 2rem;
-        }
-        h4{
-          font-family: League Spartant;
-          font-size: .8rem;
-          margin-top: .5rem;
-        }
-      }
-    }
-    .container:nth-of-type(1){
-      height: 800px;
-    }
-    .container:nth-of-type(2){
-      height: 800px;
+      margin-right: 5%;
     }
   }
   #video{
-    position: relative;
-    height: 1800px;
     display: block;
-    #v0 {
-      position: sticky;
-      top: 0%;
-      left: 0;
-      width: 100%;
-    }
   }
-  #third{
-    margin: 3rem 15rem !important;
+  #contain3{
+    #third{
+      background-color: $black;
+      margin: 3rem 15rem !important;
+    }
+
   }
   #fourth{
     #dissapear{

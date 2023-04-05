@@ -15,6 +15,7 @@
 
 body {
   background-color: #000;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -282,7 +283,7 @@ button:hover {
 
 #first {
   top: 5rem;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 #first .container {
@@ -310,7 +311,7 @@ button:hover {
   position: sticky;
   left: 95%;
   top: 40%;
-  padding-right: 2rem;
+  padding: 2rem;
   display: flex;
   align-items: end;
   flex-direction: column;
@@ -387,7 +388,7 @@ button:hover {
 #video {
   position: relative;
   height: 1800px;
-  display: block;
+  display: none;
 }
 #video #v0 {
   position: sticky;
@@ -396,71 +397,86 @@ button:hover {
   width: 100%;
 }
 
-#third {
+#contain3 {
+  height: 800px;
+  position: relative;
+}
+#contain3 #third {
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
   margin: 6rem 1rem !important;
   padding: 1rem;
   border-radius: 5px;
-  position: relative;
+  position: sticky;
+  top: 50%;
+  transform: translate(0, -50%);
 }
-#third #left {
+#contain3 #third #left {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 5rem;
   color: #731AC3;
 }
-#third #right {
+#contain3 #third #right {
   position: absolute;
   bottom: 0;
   right: 0;
   font-size: 5rem;
   color: #D33BAC;
 }
-#third #container {
+#contain3 #third #container {
   background-color: #000;
   padding: 3rem;
   display: flex;
   flex-direction: column;
 }
-#third #container #person {
+#contain3 #third #container #person {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
 }
-#third #container #person img {
+#contain3 #third #container #person img {
   width: 3rem;
   height: 3rem;
   border-radius: 50px;
   margin-right: 1rem;
 }
 
-#fourth {
+#contain4-out {
   position: relative;
-  padding: 6rem 1rem;
+  height: 1200px;
+}
+#contain4-out #contain4-in {
+  position: sticky;
+  top: 30%;
+  transform: translate(0, -50%);
+}
+#contain4-out #contain4-in #fourth {
+  position: relative;
+  padding: 0 1rem 6rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
-#fourth #dissapear {
+#contain4-out #contain4-in #fourth #dissapear {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#fourth #dissapear h1 {
+#contain4-out #contain4-in #fourth #dissapear h1 {
   text-align: center;
   background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-#fourth #dissapear p {
+#contain4-out #contain4-in #fourth #dissapear p {
   text-align: center;
 }
-#fourth #appear {
+#contain4-out #contain4-in #fourth #appear {
   position: absolute;
   top: 0;
   display: flex;
@@ -469,13 +485,13 @@ button:hover {
   width: 80%;
   display: none;
 }
-#fourth #appear #top, #fourth #appear #bottom {
+#contain4-out #contain4-in #fourth #appear #top, #contain4-out #contain4-in #fourth #appear #bottom {
   width: 100%;
 }
-#fourth #appear #top #person img, #fourth #appear #bottom #person img {
+#contain4-out #contain4-in #fourth #appear #top #person img, #contain4-out #contain4-in #fourth #appear #bottom #person img {
   width: 100%;
 }
-#fourth #appear #top #person #name, #fourth #appear #bottom #person #name {
+#contain4-out #contain4-in #fourth #appear #top #person #name, #contain4-out #contain4-in #fourth #appear #bottom #person #name {
   color: #731AC3;
 }
 
@@ -558,120 +574,19 @@ button:hover {
     color: #000 !important;
   }
   #first {
-    top: 5rem;
-    position: absolute;
-    width: 100%;
-  }
-  #first .container {
-    position: relative;
+    position: absolute !important;
   }
   #first #section1 {
-    position: sticky;
-    width: 17rem;
-    padding-left: 2rem;
-    z-index: 1;
-    top: 35%;
-  }
-  #first #section1 #used {
-    padding: 0.2rem 0.5rem;
-    margin-bottom: 1rem;
-    background-color: gray;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 50px;
-  }
-  #first #section1 #info {
-    padding-bottom: 2rem;
+    margin-left: 5%;
   }
   #first #section2 {
-    position: sticky;
-    left: 95%;
-    top: 40%;
-    padding-right: 2rem;
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    z-index: 1;
-  }
-  #first #section2 h1 {
-    color: #D33BAC;
-    text-align: end;
-  }
-  #first #section2 #search-bar {
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    border-radius: 20px;
-    margin: 1rem 0;
-  }
-  #first #section2 #search-bar #icon {
-    font-size: 1.5rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    color: #000;
-  }
-  #first #section2 #search-bar input {
-    height: 4rem;
-    width: 100%;
-    border-style: none;
-    padding-right: 1rem;
-  }
-  #first #section2 #search-bar input:focus {
-    outline: none;
-  }
-  #first #section2 #search-bar #go {
-    background-image: linear-gradient(to bottom right, #D33BAC, #731AC3);
-    color: white;
-    border-style: none;
-    border-radius: 20px;
-    width: 4rem;
-    height: 3rem;
-    margin-right: 1rem;
-    overflow-y: hidden;
-  }
-  #first #section2 #search-bar #go:hover {
-    background-image: linear-gradient(to bottom right, #731AC3, #D33BAC);
-    cursor: pointer;
-  }
-  #first #section2 #bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #first #section2 #quatity, #first #section2 #quickly {
-    text-align: end;
-    width: 45%;
-  }
-  #first #section2 #quatity i, #first #section2 #quickly i {
-    color: #731AC3;
-    font-size: 2rem;
-  }
-  #first #section2 #quatity h4, #first #section2 #quickly h4 {
-    font-family: League Spartant;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-  }
-  #first .container:nth-of-type(1) {
-    height: 800px;
-  }
-  #first .container:nth-of-type(2) {
-    height: 800px;
+    margin-right: 5%;
   }
   #video {
-    position: relative;
-    height: 1800px;
     display: block;
   }
-  #video #v0 {
-    position: sticky;
-    top: 0%;
-    left: 0;
-    width: 100%;
-  }
-  #third {
+  #contain3 #third {
+    background-color: #000;
     margin: 3rem 15rem !important;
   }
   #fourth #dissapear p {

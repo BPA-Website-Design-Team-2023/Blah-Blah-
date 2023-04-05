@@ -3,7 +3,7 @@
 car =  document.getElementById('v0');
 car.addEventListener("timeupdate", function(){
     if(this.currentTime >= 3.141) {
-        //var vid = document.getElementById('v0');
+
         //var vid = $('#v0')[0]; // jquery option
         car.pause()
         // pause video on load
@@ -17,23 +17,32 @@ car.addEventListener("timeupdate", function(){
         vid = document.getElementById('v0'); 
         // var vid = $('#v0')[0]; // jquery option
 
-
+        document.querySelector("body").style.overflowY = "invisible"
 
         // Use requestAnimationFrame for smooth playback
         function scrollPlay(){  
-        var frameNumber  = window.pageYOffset/playbackConst;
-        vid.currentTime  = frameNumber + 3.2;
-        console.log(frameNumber)
-        window.addEventListener("scroll", scrollPlay);
-        window.requestAnimationFrame(scrollPlay);
+            var frameNumber  = window.pageYOffset/playbackConst;
+            vid.currentTime  = frameNumber + 3.2;
+            window.addEventListener("scroll", scrollPlay);
+            window.requestAnimationFrame(scrollPlay);
         }
 
         window.requestAnimationFrame(scrollPlay);
         window.addEventListener("scroll", scrollPlay);
-        
     }
+    if(this.currentTime >= 3){
+        document.querySelector("body").style.overflowY = "scroll"
+    }
+    console.log(this.currentTime)
+
 }
 );
+
+/*
+window.addEventListener("mouseover", function(){
+    console.log("Time " +  car.currentTime)
+    
+})*/
 
 
 /*
@@ -52,23 +61,3 @@ function appearAnimation(){
 }
 
 */
-
-//////////
-// select video element
-/*
-var vid = document.getElementById('v0');
-//var vid = $('#v0')[0]; // jquery option
-
-// pause video on load
-vid.pause();
- 
-// pause video on document scroll (stops autoplay once scroll started)
-window.onscroll = function(){
-    vid.pause();
-};
-
-// refresh video frames on interval for smoother playback
-setInterval(function(){
-    vid.currentTime = window.pageYOffset/400;
-}, 189.5);*/
-
