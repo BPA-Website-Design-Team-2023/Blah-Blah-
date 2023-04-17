@@ -30,8 +30,8 @@ function appearAnimation(){
     const element = document.getElementById("fourth");
     const rect = element.getBoundingClientRect();
     if(rect.top.toFixed() <= 200){
-       $("#dissapear").fadeOut(5000);
-       $("#appear").fadeIn(5000);
+       $("#dissapear").fadeOut(4000);
+       $("#appear").fadeIn(4000);
        if(innerWidth >= 850){
         document.getElementById("appear").style.display = "flex";
        }

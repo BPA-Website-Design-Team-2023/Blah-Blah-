@@ -11,6 +11,7 @@ car.addEventListener("timeupdate", function(){
         var frameNumber = 3.141, // start video at frame 0
         // lower numbers = faster playback
         playbackConst = 300, 
+        //300
         // get page height from video duration
         setHeight = document.getElementById("set-height"), 
         // select video element         
@@ -42,26 +43,3 @@ window.onbeforeunload = function(){
     window.scrollTo(0,0)
 }
 
-/*
-window.addEventListener("mouseover", function(){
-    console.log("Time " +  car.currentTime)
-    
-})*/
-
-
-/*
-
-function appearAnimation(){
-    const element = document.getElementById("fourth");
-    const rect = element.getBoundingClientRect();
-    if(rect.top.toFixed() <= 200){
-       $("#dissapear").fadeOut(5000);
-       $("#appear").fadeIn(5000);
-       if(innerWidth >= 850){
-        document.getElementById("appear").style.display = "flex";
-       }
-       
-    }
-}
-
-*/
